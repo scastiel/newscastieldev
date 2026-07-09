@@ -5,7 +5,7 @@ excerpt: >-
   If you sell some products on Gumroad and also have a personal website, maybe
   you’d like to automatically list your products on this website. And if your
   website is based on Next.js, you can do it pretty easilly using Gumroad API.
-cover: /assets/posts/gumroad-pages-nextjs/cover.jpg
+cover: /assets/posts/gumroad-pages-nextjs/cover.webp
 ---
 
 If you sell some products on Gumroad and also have a personal website, maybe you’d like to automatically list your products on this website. At least I do, and this is how I generate pages for [my books](/books).
@@ -116,7 +116,7 @@ module.exports = {
 
 Here is what our product list page looks like:
 
-![The product list page](/assets/posts/gumroad-pages-nextjs/screenshot-product-list.png)
+![The product list page](/assets/posts/gumroad-pages-nextjs/screenshot-product-list.webp)
 
 As you can see, we created links to pages like `/products/<theProductId>`, so now we need to create these pages 😊.
 
@@ -217,7 +217,7 @@ export default function ProductPage({ product }: Props) {
 
 Here is what our product page now looks like:
 
-![The product detail page](/assets/posts/gumroad-pages-nextjs/screenshot-product-detail.png)
+![The product detail page](/assets/posts/gumroad-pages-nextjs/screenshot-product-detail.webp)
 
 Our pages are now complete 🎉
 

@@ -5,7 +5,7 @@ excerpt: >-
   Although I love React and am more used to single-page applications (SPA), I
   decided to leave them aside the time of a side project and to use plain old
   Node.js, Express, Pug, and MongoDB. And that felt good!
-cover: /assets/posts/back-to-basics-node-express/cover.jpg
+cover: /assets/posts/back-to-basics-node-express/cover.webp
 lang: en
 tags:
   - dev
@@ -32,7 +32,7 @@ project. A week later, I published it online, posted it on HackerNews, and got a
 few thousands of unique visitors. The project? A place to share and discover
 side projects: [🤘 My Side Project Rocks](https://mysideproject.rocks).
 
-![My Side Project Rocks!](/assets/posts/back-to-basics-node-express/screenshot1.png)
+![My Side Project Rocks!](/assets/posts/back-to-basics-node-express/screenshot1.webp)
 
 ## Ok for Node, but why not a more modern framework?
 

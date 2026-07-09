@@ -5,7 +5,7 @@ excerpt: >-
   Following advice by successful people might not be enough. A short essay about
   survivorship bias, and how it can make you forget the most important
   ingredient to success: luck.
-cover: /assets/posts/walk-in-steps-of-successful-makers-and-fail/cover.jpg
+cover: /assets/posts/walk-in-steps-of-successful-makers-and-fail/cover.webp
 lang: en
 ---
 

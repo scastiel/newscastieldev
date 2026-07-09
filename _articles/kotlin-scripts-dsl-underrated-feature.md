@@ -6,7 +6,7 @@ excerpt: >-
   its features is vastly underrated: first, the ability to create
   domain-specific languages (DSL), thanks to some syntactic sugar; then, the
   ability to write scripts and create interpreters for them.
-cover: /assets/posts/kotlin-scripts-dsl-underrated-feature/cover.png
+cover: /assets/posts/kotlin-scripts-dsl-underrated-feature/cover.webp
 ---
 
 I discovered Kotlin recently and realized that, for many people, it was only a new syntax for Java. But the more I play with it, the more convinced I am that a combo of two of its features is vastly underrated:
@@ -201,7 +201,7 @@ fun main(vararg args: String) {
 
 To run it, we can update the project’s run configuration, defining “my.nwt.kts” in the *Program arguments* field. You will notice that the application won't be rebuilt if you update the script file and rerun it!
 
-![Update the run configuration to include the script name as argument.](/assets/posts/kotlin-scripts-dsl-underrated-feature/run-config.png)
+![Update the run configuration to include the script name as argument.](/assets/posts/kotlin-scripts-dsl-underrated-feature/run-config.webp)
 
 It is already lovely, but we can make our script better by providing high-level functions, so we don’t feel like writing code!
 
@@ -392,7 +392,7 @@ nwt {
 
 Again, since we updated the script definition, you may need to rebuild the project, invalidate caches, restart IntelliJ, etc., to make it effective. But look at how nice it is that IntelliJ recognizes our DSL:
 
-![IntelliJ recognizes our DSL!](/assets/posts/kotlin-scripts-dsl-underrated-feature/screenshot.png)
+![IntelliJ recognizes our DSL!](/assets/posts/kotlin-scripts-dsl-underrated-feature/screenshot.webp)
 
 ***
 

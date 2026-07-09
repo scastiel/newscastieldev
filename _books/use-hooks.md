@@ -1,7 +1,7 @@
 ---
 title: A Guide to React Hooks
 date: '2021-05-01'
-cover: /assets/book-covers/guide-react-hooks.png
+cover: /assets/book-covers/guide-react-hooks.webp
 description: A book I made with the content of my interactive course useEffect.dev.
 urls:
   - label: Amazon

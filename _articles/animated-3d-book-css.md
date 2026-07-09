@@ -7,7 +7,7 @@ excerpt: >-
   book image CSS generator. There was a lot of interest for it, and since it’s
   definitely not that complicated, here is a small tutorial to learn how to
   create your own version.
-cover: /assets/posts/animated-3d-book-css/cover.jpg
+cover: /assets/posts/animated-3d-book-css/cover.webp
 lang: en
 tags:
   - dev
@@ -66,7 +66,7 @@ The `.book` itself has a fixed size (the size of the cover), and some rounded an
 
 As a result, we have a first shot of our cover:
 
-![Step 1 result: our book is still a little flat…](/assets/posts/animated-3d-book-css/step1.png)
+![Step 1 result: our book is still a little flat…](/assets/posts/animated-3d-book-css/step1.webp)
 
 ## Step 2 - Add some 3D
 
@@ -85,7 +85,7 @@ To add 3D and perspective, only some CSS properties are needed (it’s amazing w
 }
 ```
 
-![Step 2 result: yay it’s in 3D!](/assets/posts/animated-3d-book-css/step2.png)
+![Step 2 result: yay it’s in 3D!](/assets/posts/animated-3d-book-css/step2.webp)
 
 ## Step 3 - Add the pages
 
@@ -106,7 +106,7 @@ To see the pages on the side, instead of adding a new div, we’ll use the pseud
 }
 ```
 
-![Step 3 result: our pages are here, but not really at the good place…](/assets/posts/animated-3d-book-css/step3.png)
+![Step 3 result: our pages are here, but not really at the good place…](/assets/posts/animated-3d-book-css/step3.webp)
 
 ## Step 4 - Move the pages to the right place
 
@@ -140,7 +140,7 @@ To make the pages slighly smaller than the cover, we can resize the pages, move 
 }
 ```
 
-![Step 4 result: now the pages at the good place!](/assets/posts/animated-3d-book-css/step4.png)
+![Step 4 result: now the pages at the good place!](/assets/posts/animated-3d-book-css/step4.webp)
 
 ## Step 5 - Add the back cover
 
@@ -168,7 +168,7 @@ Positioning it is a lot easier than the pages: we just have to apply one transla
 }
 ```
 
-![Step 5 result: and there comes the back cover!](/assets/posts/animated-3d-book-css/step5.png)
+![Step 5 result: and there comes the back cover!](/assets/posts/animated-3d-book-css/step5.webp)
 
 ## Step 6 - Add some animation
 

@@ -5,7 +5,7 @@ excerpt: >-
   A recurring question I hear from people learning React: “how do I know if I’m
   ready to apply to junior React developer jobs?”. Very often, they’re ready
   before they know.
-cover: /assets/posts/what-to-know-react-first-job/cover.jpg
+cover: /assets/posts/what-to-know-react-first-job/cover.webp
 ---
 
 A recurring question I hear from people learning React: “how do I know if I’m ready to apply to junior React developer jobs?”. Very often, they’re ready before they know.

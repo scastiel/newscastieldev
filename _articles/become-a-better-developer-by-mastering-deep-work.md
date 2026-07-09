@@ -5,7 +5,7 @@ excerpt: >-
   Have you ever dreamed to wake up one morning and realize you felt different,
   more powerful. As if you had this super power inside of you that it waiting to
   be used. Good news: as a developer, you do have this super power.
-cover: /assets/posts/become-a-better-developer-by-mastering-deep-work/cover.jpg
+cover: /assets/posts/become-a-better-developer-by-mastering-deep-work/cover.webp
 lang: en
 tags:
   - life
@@ -40,7 +40,7 @@ tasks quicker, with a better quality. And you'll feel more involved in your
 projects. Without falling into the myth of the “10x-developer”, you will impress
 your coworkers with the exceptional rate of your work.
 
-![Photo by <a href='https://unsplash.com/@emilep'>Émile Perron</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/developer.jpg)
+![Photo by <a href='https://unsplash.com/@emilep'>Émile Perron</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/developer.webp)
 
 You'll also improve your level as a developer. Because you'll work faster,
 you'll also progress a lot faster that before. Suppose you're a front-end
@@ -98,7 +98,7 @@ sessions, when you have a break with colleagues, or when you do shallow work
 the morning and two in the afternoon may be enough to begin. You'll already
 produce a lot more than before.
 
-![Photo by <a href='https://unsplash.com/@sapegin'>Artem Sapegin</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/coffee.jpg)
+![Photo by <a href='https://unsplash.com/@sapegin'>Artem Sapegin</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/coffee.webp)
 
 Last step before starting your first deep work session of the day: have your
 morning ritual. Cal Newport suggests that before starting a deep work session
@@ -170,7 +170,7 @@ to answer any question. More generally, open offices would be better for
 creative ideas to emerge. Cal Newport refers to this idea as the theory of
 serendipitous creativity.
 
-![Photo by <a href='https://unsplash.com/@youxventures'>David Mao</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/white-board.jpg)
+![Photo by <a href='https://unsplash.com/@youxventures'>David Mao</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/white-board.webp)
 
 Of course in a deep work philosophy this doesn't work. If you're always
 available, it could mean you never have full focus on a task. So should you say
@@ -206,7 +206,7 @@ presentation. It's not quite easy to keep focus while walking or running,
 especially if you can't take notes. But it's an excellent way to improve your
 memory and ability to concentrate.
 
-![Photo by <a href='https://unsplash.com/@punttim'>Tim Gouw</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/walk.jpg)
+![Photo by <a href='https://unsplash.com/@punttim'>Tim Gouw</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/walk.webp)
 
 Interesting fact about memory that Cal Newport raises. Some people are able to
 remember a very complex things (a deck of cards, some number decimals...).
@@ -255,7 +255,7 @@ important part of this ritual for me.) In other terms, make sure that on the
 next day you'll be able to start working deeply as soon as you arrive. This is
 also important to prevent thinking about work on the evening.
 
-![Photo by <a href='https://unsplash.com/@corey_lyfe'>Corey Agopian</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/metro.jpg)
+![Photo by <a href='https://unsplash.com/@corey_lyfe'>Corey Agopian</a>.](/assets/posts/become-a-better-developer-by-mastering-deep-work/metro.webp)
 
 Because here is the second important point: once you leave the office, stop
 thinking about work. This may seam obvious. Yet I know a lot of people who still

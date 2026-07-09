@@ -5,7 +5,7 @@ excerpt: >-
   Today I’m starting a new blog. I started a few blogs in the past. Personal
   blogs, where I talked about a lot of things. This blog is very different,
   here’s why.
-cover: /assets/posts/first-post/cover.jpg
+cover: /assets/posts/first-post/cover.webp
 redirect_from:
   - /posts/001-first-post.html
 lang: en

@@ -6,7 +6,7 @@ excerpt: >-
   user’s location. Here I explain what it is, then I show you how I implemented
   it on my course’s selling page using serverless functions and a little bit of
   React.
-cover: /assets/posts/implement-ppp-fair-pricing-for-your-product/cover.jpg
+cover: /assets/posts/implement-ppp-fair-pricing-for-your-product/cover.webp
 lang: en
 tags:
   - dev
@@ -26,7 +26,7 @@ At the core of the [Purchasing Power Parity](https://www.investopedia.com/update
 
 And it isn’t new when you think about it: the same Spotify subscription doesn’t cost the same depending on where you are:
 
-![In Denmark, a Spotify subscription costs $18, but less than $3 in Philippines. Source: Spotify Premium Index 2014](/assets/posts/implement-ppp-fair-pricing-for-your-product/spotify_pricing.png)
+![In Denmark, a Spotify subscription costs $18, but less than $3 in Philippines. Source: Spotify Premium Index 2014](/assets/posts/implement-ppp-fair-pricing-for-your-product/spotify_pricing.webp)
 
 And the reason for this difference is obvious: purchasing power is not the same across the world. Several indices exist to measure this phenomenon, the most famous in popular culture being the [Big Mac Index](https://en.wikipedia.org/wiki/Big_Mac_Index).
 
@@ -53,7 +53,7 @@ It’s quite a big assumption, but it shouldn’t be too much trouble to use the
 
 I created a small demo website to understand what it can look like when you offer purchasing power parity. [Its source code is available on GitHub](https://github.com/scastiel/parity.coffee), and it presents an implementation for the two first options I will describe here.
 
-![parity.coffee: a demo site using PPP](/assets/posts/implement-ppp-fair-pricing-for-your-product/parity.coffee-screenshot.png)
+![parity.coffee: a demo site using PPP](/assets/posts/implement-ppp-fair-pricing-for-your-product/parity.coffee-screenshot.webp)
 
 For the payment with Stripe, I tried to be as close as possible to what they describe in [their documentation about accepting a payment](https://stripe.com/docs/checkout/integration-builder).
 
@@ -173,7 +173,7 @@ So we can use the `country` and the `discount` returned by the endpoint to displ
 
 [Have a look here to know how to get the country name and emoji 😉](https://github.com/scastiel/parity.coffee/blob/main/lib/country.js)
 
-![Displaying a message to inform the user a discount was applied.](/assets/posts/implement-ppp-fair-pricing-for-your-product/message1.png)
+![Displaying a message to inform the user a discount was applied.](/assets/posts/implement-ppp-fair-pricing-for-your-product/message1.webp)
 
 Ok, the price is automatically adjusted on the page, but we still need to adjust it when the user goes to the checkout page on Stripe. To do this, we have to call our `getPriceFromRequest` function in the `create-checkout-session` endpoint used to [create the Stripe session](https://stripe.com/docs/api/checkout/sessions/create):
 
@@ -258,7 +258,7 @@ Same as before, let’s display a banner to inform the user that they can get a 
 }
 ```
 
-![Displaying a message to inform the user they can get a discount.](/assets/posts/implement-ppp-fair-pricing-for-your-product/message2.png)
+![Displaying a message to inform the user they can get a discount.](/assets/posts/implement-ppp-fair-pricing-for-your-product/message2.webp)
 
 Regarding the Stripe checkout session creation endpoint, there is no need here to adjust anything, except making sure to allow the client to enter a discount code:
 

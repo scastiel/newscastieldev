@@ -6,7 +6,7 @@ stack:
   - Next.js
   - React
   - TypeScript
-logo: /assets/projects/mtldevjobs-logo.png
+logo: /assets/projects/mtldevjobs-logo.webp
 ---
 
 **Montreal Developer Jobs** was a niche job board for developers in Montreal. 🇨🇦

@@ -8,7 +8,7 @@ excerpt: >-
   livre. Ce n’est pas la première fois, j’avais écrit un livre consacré à
   Node.js en 2013. Le projet m’avait beaucoup plu, bien que cela prenne beaucoup
   de temps.
-cover: /assets/posts/pourquoi-un-livre-sur-react/cover.jpg
+cover: /assets/posts/pourquoi-un-livre-sur-react/cover.webp
 lang: fr
 tags:
   - life
@@ -68,7 +68,7 @@ Aujourd’hui les trois premiers chapitres sont publiés. Cela me rend réelleme
 content car ils représentent la première partie du livre, la plus difficile à
 écrire car s’adressant évidemment aux débutants React.
 
-![Des applications modernes avec React](/assets/posts/pourquoi-un-livre-sur-react/cover.png)
+![Des applications modernes avec React](/assets/posts/pourquoi-un-livre-sur-react/cover-png.webp)
 
 Le livre est
 [en vente sur LeanPub](https://leanpub.com/apps-web-modernes-react/), au prix

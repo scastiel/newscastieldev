@@ -18,7 +18,7 @@ l’[artisan développeur](http://artisandeveloppeur.com/) parle de “recherche
 beau”, par opposition avec ceux considérant le code uniquement dans un processus
 industriel.
 
-![](/assets/posts/bien-developper-est-il-un-art/image01.jpg)
+![](/assets/posts/bien-developper-est-il-un-art/image01.webp)
 
 **Je dois dire que je ne me retrouve pas dans cette idée**. Cela fait plusieurs
 années que je fais du développement et j’espère bien en faire encore de longues

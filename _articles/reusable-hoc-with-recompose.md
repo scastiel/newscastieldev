@@ -5,7 +5,7 @@ excerpt: >-
   Writing reusable components in React is something every React developer care
   about (or should care about). Wether it’s to create a toolbox of styled
   components, to mutualize common behaviors, etc.
-cover: /assets/posts/reusable-hoc-with-recompose/cover.jpg
+cover: /assets/posts/reusable-hoc-with-recompose/cover.webp
 redirect_from:
   - /posts/006-reusable-hoc-with-recompose.html
 lang: en

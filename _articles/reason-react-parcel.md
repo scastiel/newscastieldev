@@ -7,7 +7,7 @@ excerpt: >-
   Reason-React. But even if I still understand the advantages of the approach of
   CRA and Reason Scripts, I recently discovered Parcel, a very minimalist
   bundler for web projects.
-cover: /assets/posts/reason-react-parcel/cover.png
+cover: /assets/posts/reason-react-parcel/cover.webp
 redirect_from:
   - /posts/007-reason-react-parcel.html
 lang: en
@@ -81,7 +81,7 @@ console.log('Hello from JavaScript!')
 
 To start the project, let’s just run `yarn start`:
 
-![Hello from JavaScript!](/assets/posts/reason-react-parcel/reason-parcel-01.png)
+![Hello from JavaScript!](/assets/posts/reason-react-parcel/reason-parcel-01.webp)
 
 ## Add Reason
 
@@ -128,7 +128,7 @@ file, which is now written in Reason:
 
 Let’s start our app now:
 
-![Hello from Reason!](/assets/posts/reason-react-parcel/reason-parcel-02.png)
+![Hello from Reason!](/assets/posts/reason-react-parcel/reason-parcel-02.webp)
 
 There it is! Only one command to run the project including Reason to JavaScript
 transpilation! 😁
@@ -199,7 +199,7 @@ component:
 
 Wow that’s it! Easy right? Here is what you should get in your browser:
 
-![Hello from Reason!](/assets/posts/reason-react-parcel/reason-parcel-03.png)
+![Hello from Reason!](/assets/posts/reason-react-parcel/reason-parcel-03.webp)
 
 Now you’re ready to use React to build powerful and maintainable components and
 enjoy the possibilities of Reason in the same time. Of course it isn’t the only

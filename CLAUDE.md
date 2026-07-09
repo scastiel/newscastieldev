@@ -76,4 +76,14 @@ old repo). It needs `npm install` (gray-matter). Node ≥ 18.
   `/feed/feed.xml` exists).
 - Custom domain / CNAME.
 - Design/styling.
-- Image optimization (some post images are multi-MB).
+
+## Image optimization (done)
+
+Raster images were downscaled to **max 1600px** (longest side, shrink-only) and
+converted to **WebP q82** in place (`magick … -resize '1600x1600>' -quality 82`),
+cutting `assets/` from ~81 MB to ~13 MB. Originals were deleted and every
+reference (markdown, front-matter `cover:`, `_data/books.yml`) rewritten to `.webp`.
+Left as-is: animated GIFs (`cwebp` can't do them, and they're tiny), SVG/PDF, root
+icons, and a few small PNGs where WebP came out larger. When adding a new post
+image, resize + convert it the same way rather than committing a raw multi-MB file.
+(Note: the pre-existing broken ref `assets/blog/hello-world/robot.jpg` predates this.)

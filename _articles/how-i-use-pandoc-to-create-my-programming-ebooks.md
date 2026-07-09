@@ -5,7 +5,7 @@ excerpt: >-
   Here is the story of how I built my eBooks, especially the last one. After
   some trial and errors, in the end, I used the same recipe as the two previous
   ones, and it involves a fantastic tool: Pandoc.
-cover: /assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/cover.jpg
+cover: /assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/cover.webp
 lang: en
 tags:
   - dev
@@ -31,7 +31,7 @@ Bust most of all, I wanted an efficient workflow.
 
 I intended to release a first version of the book ASAP, then iterate thanks to readers’ feedback and new ideas I had. For this reason, I wanted to focus on the content and on the appearance **independently**.
 
-![The workflow I didn’t want vs. the one I wanted.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/workflow.png)
+![The workflow I didn’t want vs. the one I wanted.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/workflow.webp)
 
 I didn’t want to spend time on the presentation each time I updated the content. I’m a web developer; it wouldn’t occur to me to edit my CSS each time I update the HTML content. Same here.
 
@@ -69,7 +69,7 @@ To write the content, I could now write using Markdown, with the basic formattin
 
 By the way, syntax highlighting is themeable, and I really wanted to use [Dracula](https://draculatheme.com/), which I already used for my VSCode. So I created [a custom theme](https://gist.github.com/scastiel/4c409156ad4bc6a6dbbfe2abbd163671#file-dracula-theme) for it. 🙂
 
-![](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/source-code.png)
+![](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/source-code.webp)
 
 The only thing I find problematic with Pandoc is [its documentation](https://pandoc.org/MANUAL.html). It contains a lot of information, but it’s on one page.
 
@@ -79,7 +79,7 @@ So you scroll, then scroll, and scroll again. And when you want to find somethin
 
 Anyway, you can usually find what you’re looking for. I’d just prefer if it used something more modern, such as Gitbook or Docusaurus, to maintain the documentation and make it easier to navigate.
 
-![An overview of how I used Pandoc to generate PDF, ePub, and mobi files.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/pandoc.png)
+![An overview of how I used Pandoc to generate PDF, ePub, and mobi files.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/pandoc.webp)
 
 Pandoc is very good at generating HTML or an ePub file. You can give it some CSS to customize anything you want. It would be a dream if you were able to do the same to generate a customized PDF.
 
@@ -116,7 +116,7 @@ Here is, for example, how I managed to have the book title in the page footer: (
 
 Well, to be fair, it would have been much more straightforward if I just wanted the book title. But I wanted it in an indigo rectangle starting from the far left of the page.
 
-![The page footer is not that easy to obtain using LaTeX customization…](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/footer.png)
+![The page footer is not that easy to obtain using LaTeX customization…](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/footer.webp)
 
 Still, most of the time, I was able to get what I wanted. It just took more time than I wanted to spend on it.
 
@@ -174,11 +174,11 @@ I embedded the examples’ source code in a small **React** application to run t
 
 Now, I feel a bit silly not to have thought of using [Storybook](https://storybook.js.org/), which could have been a perfect solution.
 
-![The mini-app to run examples.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/examples.png)
+![The mini-app to run examples.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/examples.webp)
 
 I created the cover using Apple Pages, sufficient for what I wanted to do. I should ~~probably~~ definitely hire someone to create a more professional one.
 
-![Designing the cover in Pages.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/pages.png)
+![Designing the cover in Pages.](/assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/pages.webp)
 
 I often design graphics using **[Inkscape](https://inkscape.org/)** (for example, the banner for the [Gumroad page](https://gum.co/use-hooks)), even if at the end I manipulate and generate bitmap images. I know it’s not its first purpose, but I find it easier to use than Gimp or commercial alternatives.
 

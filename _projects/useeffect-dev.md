@@ -6,7 +6,7 @@ started: '2020-08-14'
 stack:
   - Next.js
   - React
-logo: /assets/projects/useeffectdev-logo.png
+logo: /assets/projects/useeffectdev-logo.webp
 ---
 
 [**useEffect.dev**](https://useeffect.dev) is an interactive course to master React hooks. It contains 15 lessons, each one dedicated to one hook or to one problem that often occurs with hooks.

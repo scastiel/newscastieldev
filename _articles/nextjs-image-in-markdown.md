@@ -5,7 +5,7 @@ excerpt: >-
   Next.js has a wonderful Image component that lazy loads images and optimizes
   their dimensions. Here is how to use it when generating your blog from
   Markdown.
-cover: /assets/posts/nextjs-image-in-markdown/cover.jpg
+cover: /assets/posts/nextjs-image-in-markdown/cover.webp
 ---
 
 A few months ago, I rebuilt my blog using Next.js, writing my posts with Markdown. Since then, there was something bothering me: Next.js has a wonderful [`Image`](https://nextjs.org/docs/api-reference/next/image) component that lazy loads images and optimizes their dimensions, but it isn’t used for images referenced in my Markdown posts. I had to find a solution, and now I’m giving it to you. 🤫
@@ -22,7 +22,7 @@ _Note: you’ll find all the changes I make here in [this commit](https://github
 
 If we start the application using `yarn dev` (after installing dependencies using `yarn`) and open the post, we can see our image, but it’s a basic `img` element with the image URL in the `src` attribute. No lazy loading, no `srcset`…
 
-![The image is just an img tag](/assets/posts/nextjs-image-in-markdown/result-img.png)
+![The image is just an img tag](/assets/posts/nextjs-image-in-markdown/result-img.webp)
 
 The blog starter uses `remark` to parse Markdown and generate the HTML. The problem with this approach is that we can’t configure it to use some React components in place of the default HTML ones. The trick we are going to use is replacing `remark` with [`react-markdown`](https://github.com/remarkjs/react-markdown) (it’s made by the same team as `remark` by the way 😉).
 
@@ -89,7 +89,7 @@ return (
 
 Now, our image will have all the advantages of Next.js `Image` component 😊
 
-![Better: now using Next.js Image component but with hardcoded dimensions](/assets/posts/nextjs-image-in-markdown/result-hardcoded-dimensions.png)
+![Better: now using Next.js Image component but with hardcoded dimensions](/assets/posts/nextjs-image-in-markdown/result-hardcoded-dimensions.webp)
 
 What about the hardcoded dimensions `1200x200`, you might ask? These dimensions will be used to display the image’s box before it is loaded. They are required by the `Image` component, so maybe we should find a way to _guess_ them from the image?
 
@@ -200,7 +200,7 @@ const PostBody = ({ content, imageSizes }: Props) => {
 
 Now, our image has the right dimensions in its `width` and `height` attributes 🎉
 
-![Perfect: using Next.js Image component with the right dimensions](/assets/posts/nextjs-image-in-markdown/result-right-dimensions.png)
+![Perfect: using Next.js Image component with the right dimensions](/assets/posts/nextjs-image-in-markdown/result-right-dimensions.webp)
 
 Hopefully this short tutorial will be helpful to you. There is much more we can do using `ReactMarkdown`; for instance, I’ve seen developers using the `alt` part of the image’s Markdown (the `blah blah` in `![blah blah](test.jpg)`) as a way to store attributes for the image in JSON. This is a nice way for instance to embed the image inside a [`<figure>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and add a `<figcaption>` for its description.
 

@@ -6,7 +6,7 @@ excerpt: >-
   perfectly efficient with it. You can be able to tell others why it is nice or
   not, and wether they should use it or not. But at the same time it’s possible
   you consider it a bit magic.
-cover: /assets/posts/lost-redux-saga-reimplement-them/cover.jpg
+cover: /assets/posts/lost-redux-saga-reimplement-them/cover.webp
 lang: en
 tags:
   - dev

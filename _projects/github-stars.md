@@ -8,7 +8,7 @@ stack:
   - React
   - TypeScript
   - Remotion
-logo: /assets/projects/crdso.png
+logo: /assets/projects/crdso.webp
 ---
 
 [**GitHub Stars Video**](/github-stars) is a fun app to generate an animation of the stars on a given GitHub repository. Perfect to brag on social media!

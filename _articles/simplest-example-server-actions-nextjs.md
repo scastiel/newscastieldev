@@ -59,13 +59,13 @@ In our example, the server action is the function `getInformationFromTheServer`,
 
 From the client component, we can call the function like any other side effect (async) function: in a `useEffect` or an event callback.
 
-![](/assets/posts/simplest-example-server-actions-nextjs/server-actions-other-screenshot.png)
+![](/assets/posts/simplest-example-server-actions-nextjs/server-actions-other-screenshot.webp)
 
 It looks like we’re just calling a function, so you might wonder why everybody is making such a fuss about server actions… Look closer: **from a client component, we call a function stored on the server**.
 
 This means that it isn’t _just_ a function call: there is actually an HTTP request made to the API to call the function. You can see it in the Network tab of your DevTools:
 
-![](/assets/posts/simplest-example-server-actions-nextjs/server-actions-screenshot.png)
+![](/assets/posts/simplest-example-server-actions-nextjs/server-actions-screenshot.webp)
 
 The endpoint is at the same path as your current page but:
 

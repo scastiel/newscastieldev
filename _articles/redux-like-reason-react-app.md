@@ -7,7 +7,7 @@ excerpt: >-
   React are really young projects, there is not a lot of tutorials,
   StackOverflow questions, and documentation about it yet. So beginning a new
   project isn’t as easy as the official website wants us think.
-cover: /assets/posts/redux-like-reason-react-app/cover.png
+cover: /assets/posts/redux-like-reason-react-app/cover.webp
 redirect_from:
   - /posts/005-redux-like-reason-react-app.html
 lang: en
