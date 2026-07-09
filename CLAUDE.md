@@ -5,6 +5,12 @@ migrated from a Next.js site (`~/dev/scastiel.dev`, the source of truth for orig
 content). The site is intentionally **unstyled** (plain semantic HTML, no CSS) — design
 is a later, separate pass. Don't add styling unless asked.
 
+## Git workflow
+
+Always update `main` with **rebase, not merge** (`git pull --rebase`, and rebase
+feature branches onto `main` rather than merging `main` in). Keep history linear — no
+merge commits.
+
 ## Toolchain (important)
 
 The macOS **system Ruby (2.6) is broken** on this machine — use Homebrew Ruby:
