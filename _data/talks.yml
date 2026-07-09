@@ -1,0 +1,73 @@
+# Past talks, newest first — drives the /talks page cards.
+# Each entry: title, date (ISO, formatted for the rail), event_url (the date
+# links to it), venues [{name, url}], links [{label, url}] (slides/video/source),
+# description (markdown, rendered inline), note (optional, e.g. language).
+- title: "Creating a Custom Task Tool with React, Liveblocks, Clerk"
+  date: 2024-11-01
+  event_url: "https://guild.host/events/react-montral-meetup-kwiawm"
+  venues:
+    - name: "React Montreal"
+      url: "https://guild.host/react-montreal"
+    - name: "/dev/mtl"
+      url: "https://www.dev-mtl.ca/"
+  links:
+    - label: "🎞️ Slides"
+      url: "https://docs.google.com/presentation/d/1rY98hktTF7C1qMeBx93dCL8ULffiJZZZlmsKt8oVJJI/edit?usp=sharing"
+    - label: "⚙️ Source"
+      url: "https://github.com/scastiel/pres-cycles"
+  description: >
+    In a world of generic task solutions, finding one to fit your team’s needs
+    is tough. I share how I develop a **custom tool** using **React**,
+    **Next.js**, **Liveblocks**, and **Clerk**, covering design and tech choices
+    that enhance team workflow. Discover how tailored solutions outperform
+    standard options.
+  note: "This presentation was given in French."
+- title: "Server Components: Don’t Miss the Next Revolution in React"
+  date: 2024-02-21
+  event_url: "https://confoo.ca/en/2024/session/server-components-don-t-miss-the-next-revolution-in-react"
+  venues:
+    - name: "Confoo.ca 2024"
+      url: "https://confoo.ca/en/2024"
+  description: >
+    A new revolution is happening in React with **Server Components**. We can
+    move some rendering logic on the server, enabling new patterns and
+    redefining how we write **powerful front-end** for our applications. We'll
+    explore use cases in which Server Components improve **performance and
+    maintainability**, so that by the end of the talk, you’ll be ready to use
+    Server Components to take your React experience to the next level.
+- title: "Server Components: A Paradigm Shift in React Learning"
+  date: 2023-07-20
+  event_url: "https://www.meetup.com/react-mtl/events/vpjkdtyfckbqb/"
+  venues:
+    - name: "React Montreal"
+      url: "https://www.meetup.com/react-mtl/"
+  links:
+    - label: "🎞️ Slides"
+      url: "/assets/server-components-paradigm-shift-react-learning.pdf"
+    - label: "⚙️ Source"
+      url: "https://github.com/scastiel/react-mtl-demo"
+  description: >
+    **Server Components** are not only an exciting new feature of React; they
+    also offer a much easier way for beginners to learn it. In this talk, I will
+    give **an intro** to Server Components, then present some nice **use cases**.
+    Finally, I’ll propose a new **learning path** to React based on server
+    components, where we would focus on the server first and then gradually
+    explore client features.
+- title: "What’s new in Frontend in 2023?"
+  date: 2023-03-29
+  event_url: "https://www.meetup.com/montreal-jug/events/292245865/"
+  venues:
+    - name: "Montreal JUG"
+      url: "https://www.montreal-jug.org/"
+  links:
+    - label: "🎞️ Slides"
+      url: "/assets/whats-new-in-frontend-slides.pdf"
+    - label: "📺 Video"
+      url: "https://youtu.be/EaIG11K24FI"
+  description: >
+    Have you heard of **incremental site generation**? Did you know that
+    **serverless** can bring a lot to your frontend, or that you can write React
+    components that will be rendered only **on the server**? Staying up-to-date
+    with frontend trends isn’t easy, especially if you consider yourself a
+    backend developer. Let me show you in 15 minutes what’s hot in the
+    **frontend ecosystem**. Who knows, maybe you’ll want to try it?

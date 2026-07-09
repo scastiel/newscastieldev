@@ -8,10 +8,10 @@ layout: default
   Kicker shows language + tags as coloured pills; the meta rail from the
   index is distilled to an inline kicker + posted date for reading comfort.
 {% endcomment %}
-<main class="wrap">
-  <p class="prose" style="margin:44px auto 0"><a class="backlink" href="/articles">← Articles</a></p>
+<main class="page-main">
+  <p style="margin:44px 0 0"><a class="backlink" href="/articles">← Articles</a></p>
 
-  <header class="post-header prose">
+  <header class="post-header">
     <div class="kicker">
       {% assign lang = page.lang | default: "en" %}
       <span class="{{ lang }}">{{ lang | upcase }}</span>
@@ -22,7 +22,7 @@ layout: default
   </header>
 
   {% if page.cover %}
-    <img class="post-cover prose" src="{{ page.cover }}" alt="{{ page.cover_alt | default: page.title }}" loading="lazy">
+    <img class="post-cover" src="{{ page.cover }}" alt="{{ page.cover_alt | default: page.title }}" loading="lazy">
   {% endif %}
 
   <div class="post-body">
