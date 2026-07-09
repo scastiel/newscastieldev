@@ -20,7 +20,7 @@ thing to do, it's a fantastic tool, but let's be honest, it's quite hard to use.
 I made a lot of improvements on the codebase of this blog these past few days,
 here is a small feedback.
 
-<div style="margin: 2rem auto; max-width: 20rem">
+<div markdown="1" style="margin: 2rem auto; max-width: 20rem">
 
 ![Gatsby logo](/assets/posts/this-blog-is-proudly-powered-by-gatsby/Gatsby_Logo.svg)
 

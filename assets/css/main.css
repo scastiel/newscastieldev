@@ -253,6 +253,13 @@ a.card:hover, .card--link:hover { border-color: var(--accent); box-shadow: 0 6px
 .post-body li { margin-bottom: 4px; }
 .post-body a { text-decoration: underline; text-decoration-color: var(--accent-line); text-underline-offset: 2px; }
 .post-body img { border-radius: var(--radius); margin: 8px auto 22px; }
+/* Inline SVG diagrams (e.g. Excalidraw exports) and <video> — align them to
+   the reading column like images: block, centered, never wider than the column. */
+.post-body svg, .post-body video {
+  display: block; height: auto; margin: 8px auto 22px;
+  max-width: min(100%, var(--measure)); border-radius: var(--radius);
+}
+.post-body video { width: 100%; background: var(--code-bg); }
 .post-body figure { margin: 8px auto 22px; }
 .post-body figcaption { font-family: var(--font-head); font-size: 12px; color: var(--faint); text-align: center; margin-top: 8px; }
 
