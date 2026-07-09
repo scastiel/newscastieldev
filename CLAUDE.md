@@ -53,8 +53,15 @@ All media lives under **`assets/`** (`assets/posts/<slug>/`, `assets/book-covers
 
 GitHub Pages via **GitHub Actions** (`.github/workflows/pages.yml`), NOT the classic
 branch build — the site needs Jekyll 4 (`render_with_liquid`, `jekyll-feed` collections)
-which the pinned `github-pages` gem (Jekyll 3.x) can't build. No custom domain yet
-(CNAME removed); `url` in `_config.yml` is the intended production URL.
+which the pinned `github-pages` gem (Jekyll 3.x) can't build.
+
+Currently served from a **project page**: `https://scastiel.github.io/newscastieldev/`,
+so `baseurl: /newscastieldev` in `_config.yml`. Content/templates stay root-absolute
+(portable); **`_plugins/prepend_baseurl.rb`** injects the baseurl into href/src of the
+final HTML at build time (jekyll-feed/sitemap/redirect-from already handle baseurl
+themselves). Local `jekyll serve` therefore runs at `http://127.0.0.1:4000/newscastieldev/`.
+To move to a root domain later: set `url` to the domain, `baseurl` to `""`, add a
+`CNAME` — nothing else changes (the plugin becomes a no-op).
 
 ## migrate.mjs (one-time script — handle with care)
 

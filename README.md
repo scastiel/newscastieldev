@@ -24,6 +24,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
+The site is served from a GitHub project page, so it lives under a subpath —
+locally that's **http://127.0.0.1:4000/newscastieldev/** (`baseurl` in `_config.yml`).
+Content uses root-absolute URLs; `_plugins/prepend_baseurl.rb` prepends the baseurl
+to `href`/`src` at build time. Moving to a root domain later just means setting
+`url` to the domain and `baseurl` to `""`.
+
 ## Deploy (GitHub Pages)
 
 Deployment is via **GitHub Actions** (`.github/workflows/pages.yml`), not the

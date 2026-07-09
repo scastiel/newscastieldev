@@ -2,10 +2,12 @@ title: Sebastien Castiel
 description: Developer, writer, indie hacker · 📍 Montreal, QC
 author: Sebastien Castiel
 email: sebastien@castiel.me
-# Intended production URL (used for absolute links in the sitemap/feed).
-# No CNAME yet — add one when wiring up the custom domain on GitHub Pages.
-url: "https://scastiel.dev"
-baseurl: ""
+# Served from a GitHub project page for now: https://scastiel.github.io/newscastieldev/
+# Content/templates use root-absolute URLs (portable); _plugins/prepend_baseurl.rb
+# injects `baseurl` into the final HTML at build time. To move to a root domain later,
+# set url to the domain and baseurl to "" — nothing else needs to change.
+url: "https://scastiel.github.io"
+baseurl: "/newscastieldev"
 lang: en
 
 # Social links (from the old Footer.tsx)
