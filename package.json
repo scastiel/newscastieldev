@@ -1,0 +1,9 @@
+{
+  "name": "scastiel-dev-migration",
+  "private": true,
+  "type": "module",
+  "description": "One-time content migration from the old Next.js repo into this Jekyll site.",
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}

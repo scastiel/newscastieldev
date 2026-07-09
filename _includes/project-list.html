@@ -1,0 +1,18 @@
+{%- comment -%}
+Expects `include.projects` to be a list of project documents.
+Note: the external project URL is stored in the `link` front-matter field, not
+`url` — a collection document's `url` is Jekyll's own (output) URL.
+{%- endcomment -%}
+<ul>
+  {% for project in include.projects %}
+  <li>
+    {% if project.link %}<a href="{{ project.link }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}
+    <small>({{ project.started | date: "%Y" }})</small>
+    {% if project.sold %}<small>[sold]</small>{% endif %}
+    <br><small>{{ project.description }}</small>
+    {% if project.content != "" %}
+    <details><summary>More info…</summary>{{ project.content }}</details>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

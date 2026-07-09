@@ -1,0 +1,78 @@
+title: Sebastien Castiel
+description: Developer, writer, indie hacker · 📍 Montreal, QC
+author: Sebastien Castiel
+email: sebastien@castiel.me
+# Intended production URL (used for absolute links in the sitemap/feed).
+# No CNAME yet — add one when wiring up the custom domain on GitHub Pages.
+url: "https://scastiel.dev"
+baseurl: ""
+lang: en
+
+# Social links (from the old Footer.tsx)
+social:
+  linkedin: https://www.linkedin.com/in/scastiel
+  github: https://github.com/scastiel
+  youtube: https://www.youtube.com/@scastiel
+  twitter: https://twitter.com/scastiel
+
+# Markdown / syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# Collections
+# NOTE: we deliberately avoid Jekyll's built-in `_posts` because it forces
+# YYYY-MM-DD-<slug>.md filenames. A custom `articles` collection keeps the
+# filename equal to the original slug, with the date only in front matter,
+# so article URLs are /<slug>/ with no date.
+collections:
+  articles:
+    output: true
+    permalink: /:name/
+  books:
+    output: true
+    permalink: /:name/
+  projects:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: post
+      # Article bodies are pure content and often contain `{{ }}` / JSX inside
+      # code blocks; don't run them through Liquid. Layouts still render normally.
+      render_with_liquid: false
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+      render_with_liquid: false
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# jekyll-feed: expose the Atom feed for articles at the current /feed/feed.xml path
+feed:
+  posts_limit: 100
+  collections:
+    articles:
+      path: feed/feed.xml
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - migrate.mjs
+  - node_modules
+  - README.md
+  - vendor
