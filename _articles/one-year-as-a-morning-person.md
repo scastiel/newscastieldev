@@ -129,7 +129,7 @@ I could and probably will write a post about this reading habit, and some more
 about each of the books I preferred. But one of the books I read is particularly
 related to my new morning routine.
 
-<div class="inset-right-image">
+<div class="inset-right-image" markdown="1">
 
 ![Miracle Morning by Hal Elrod <a href='https://www.goodreads.com/book/show/17166225-the-miracle-morning'>(Goodreads)</a>](/assets/posts/one-year-as-a-morning-person/miracle-morning.webp)
 

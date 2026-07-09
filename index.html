@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: null
 description: Sebastien Castiel · Developer, writer, indie hacker · 📍 Montreal, QC
 ---
@@ -7,7 +7,7 @@ description: Sebastien Castiel · Developer, writer, indie hacker · 📍 Montre
 {%- assign projects = site.projects | sort: 'started' | reverse -%}
 {%- assign books = site.data.books -%}
 
-<p>
+<p class="intro">
   French developer expatriated in Montreal, I always have several
   <a href="/projects">side projects</a> ongoing, and I love sharing what I learn
   <a href="/articles">on this blog</a>, in <a href="/talks">talks</a>, on
@@ -15,25 +15,34 @@ description: Sebastien Castiel · Developer, writer, indie hacker · 📍 Montre
   <a href="/books">in books</a>.
 </p>
 
-<aside>
-  👋 I just released <a href="https://getkado.app">Kadō</a>, a free and open-source
-  habit tracker for iPhone and iPad. Privacy-first, no account needed, no streaks
-  that punish you. Go check it out!
+<aside class="announce">
+  <span class="tag">New</span>
+  <p>
+    👋 I just released <a href="https://getkado.app">Kadō</a>, a free and open-source
+    habit tracker for iPhone and iPad. Privacy-first, no account needed, no streaks
+    that punish you. Go check it out!
+  </p>
 </aside>
 
-<p><a href="/me">See more about me →</a></p>
+<p><a class="backlink" href="/me">See more about me →</a></p>
 
-<h2>Latest articles</h2>
+<div class="section-head">
+  <p class="eyebrow">Latest articles</p>
+  <a class="see-all" href="/articles">See all →</a>
+</div>
 {% assign latest_articles = articles | slice: 0, 4 %}
 {% include article-list.html articles=latest_articles %}
-<p><a href="/articles">See all articles →</a></p>
 
-<h2>Latest books</h2>
+<div class="section-head">
+  <p class="eyebrow">Latest books</p>
+  <a class="see-all" href="/books">See all →</a>
+</div>
 {% assign latest_books = books | slice: 0, 4 %}
 {% include book-list.html books=latest_books %}
-<p><a href="/books">See all books →</a></p>
 
-<h2>Current projects</h2>
+<div class="section-head">
+  <p class="eyebrow">Current projects</p>
+  <a class="see-all" href="/projects">See all →</a>
+</div>
 {% assign latest_projects = projects | slice: 0, 4 %}
 {% include project-list.html projects=latest_projects %}
-<p><a href="/projects">See all projects →</a></p>

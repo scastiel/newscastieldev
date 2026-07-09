@@ -1,8 +1,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{%- assign page_title = page.title | default: site.title -%}
-<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}">
+
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 180 }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+{%- comment -%} Favicon / apple-touch — kept at the repo root; root-absolute so the baseurl plugin prefixes them {%- endcomment -%}
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-icon.png">
-{%- feed_meta -%}
+
+{%- comment -%} Atom feed (jekyll-feed exposes it at /feed/feed.xml per _config.yml) {%- endcomment -%}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed/feed.xml">
+
+{%- comment -%}
+  Open Graph / Twitter. Per-post OG image: set `image:` (or use a post's
+  `cover:`) in front matter; otherwise the site icon is used. Generating
+  dedicated per-post OG images is a later follow-up but needs no template change.
+{%- endcomment -%}
+{% assign og_image = page.image | default: page.cover | default: "/icon.png" %}
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 180 }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@scastiel">
+
+{%- comment -%} Fonts {%- endcomment -%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+{%- comment -%}
+  Apply saved theme BEFORE first paint to avoid a flash. Everything else
+  (system preference) is pure CSS — the site is fully functional with JS off.
+{%- endcomment -%}
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>

@@ -1,17 +1,30 @@
-{%- comment -%}
-Expects `include.books` to be a list of book entries (from _data/books.yml).
-{%- endcomment -%}
-<ul>
+{% comment %}
+  book-list.html — used on the home teaser and the /books index.
+      {% include book-list.html books=site.data.books %}
+  Each entry (from _data/books.yml): title, date, description, cover,
+  slug + has_page (has_page makes the title link to /<slug>/), and store
+  links in `urls: [{label, url}, ...]`.
+{% endcomment %}
+<div class="book-feed">
   {% for book in include.books %}
-  <li>
-    {% if book.has_page %}<a href="/{{ book.slug }}/">{{ book.title }}</a>{% else %}<strong>{{ book.title }}</strong>{% endif %}
-    <small>({{ book.date | date: "%Y" }})</small>
-    <br><small>{{ book.description }}</small>
-    {% if book.urls %}
-    <br><small>
-      {% for link in book.urls %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
-    </small>
-    {% endif %}
-  </li>
+    <div class="card book-row">
+      <div class="book-cover book-cover--md">{% if book.cover %}<img src="{{ book.cover }}" alt="Cover of {{ book.title }}">{% else %}cover{% endif %}</div>
+      <div style="flex:1">
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+          {% if book.has_page %}
+            <h3><a href="/{{ book.slug }}/">{{ book.title }}</a></h3>
+          {% else %}
+            <h3>{{ book.title }}</h3>
+          {% endif %}
+          <span class="year">{{ book.date | date: "%Y" }}</span>
+        </div>
+        <p style="margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.55">{{ book.description }}</p>
+        {% if book.urls %}
+          <div class="stores">
+            {% for link in book.urls %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>

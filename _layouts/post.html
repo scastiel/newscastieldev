@@ -1,11 +1,31 @@
 ---
 layout: default
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <p><small>Posted on {{ page.date | date: "%B %-d, %Y" }}</small></p>
+{% comment %}
+  Article detail. Body has render_with_liquid:false, so ALL presentation
+  lives here — we just wrap {{ content }} in .post-body and let the CSS
+  style headings, code (Rouge), images, blockquotes, embeds, tables, etc.
+  Kicker shows language + tags as coloured pills; the meta rail from the
+  index is distilled to an inline kicker + posted date for reading comfort.
+{% endcomment %}
+<main class="wrap">
+  <p class="prose" style="margin:44px auto 0"><a class="backlink" href="/articles">← Articles</a></p>
+
+  <header class="post-header prose">
+    <div class="kicker">
+      {% assign lang = page.lang | default: "en" %}
+      <span class="{{ lang }}">{{ lang | upcase }}</span>
+      {% for t in page.tags %}<span class="sep">·</span><span class="{{ t }}">{{ t }}</span>{% endfor %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    <div class="posted">Posted {{ page.date | date: "%B %-d, %Y" }}</div>
+  </header>
+
   {% if page.cover %}
-  <p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
+    <img class="post-cover prose" src="{{ page.cover }}" alt="{{ page.cover_alt | default: page.title }}" loading="lazy">
   {% endif %}
-  {{ content }}
-</article>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+</main>

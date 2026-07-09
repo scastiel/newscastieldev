@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
-<article>
+{% comment %}
+  Generic page: home, /articles, /books, /projects, /talks, /me, /contact,
+  and the "under construction" stubs. The content file supplies its own
+  structure (section heads + list includes for the index pages, plain
+  prose for text pages). `page.count` (optional) shows next to the title.
+{% endcomment %}
+<main class="page-main">
+  {% if page.title and page.hide_title != true %}
+    <h1 class="page-title">{{ page.title }}{% if page.count %}<span class="count">{{ page.count }}</span>{% endif %}</h1>
+  {% endif %}
   {{ content }}
-</article>
+</main>

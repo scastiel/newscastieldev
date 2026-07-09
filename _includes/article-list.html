@@ -1,12 +1,24 @@
-{%- comment -%}
-Expects `include.articles` to be a list of article documents.
-{%- endcomment -%}
-<ul>
-  {% for article in include.articles %}
-  <li>
-    <a href="{{ article.url }}">{{ article.title }}</a>
-    <small>({{ article.date | date: "%B %-d, %Y" }})</small>
-    {% if article.excerpt %}<br><small>{{ article.excerpt | strip_html | strip_newlines }}</small>{% endif %}
-  </li>
+{% comment %}
+  article-list.html — shared card treatment for the home teaser and the
+  /articles index. Pass a list of articles:
+      {% include article-list.html articles=site.articles %}
+      {% include article-list.html articles=latest %}   (a sliced subset)
+  Expected fields on each article: title, date, url, lang ("en"|"fr"),
+  tags (["dev"] / ["life"]), excerpt.
+{% endcomment %}
+<div class="article-feed">
+  {% for post in include.articles %}
+    {% assign lang = post.lang | default: "en" %}
+    {% assign topic = post.tags | first | default: "dev" %}
+    <a class="card article-row" href="{{ post.url }}">
+      <div class="rail">
+        <span>{{ post.date | date: "%b %Y" }}</span>
+        <span class="meta {% if lang == 'fr' %}fr{% endif %}">{{ lang | upcase }} · {{ topic }}</span>
+      </div>
+      <div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | default: post.content | strip_html | normalize_whitespace | truncate: 150 }}</p>
+      </div>
+    </a>
   {% endfor %}
-</ul>
+</div>

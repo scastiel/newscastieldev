@@ -146,7 +146,7 @@ revalidatePath('/') // assuming the messages are displayed at root
 Here is what our form looks like now:
 
 <video controls>
-  <source src="/guestbook-1.mov" type="video/mp4" />
+  <source src="/assets/posts/server-components-actions-react-nextjs/guestbook-1.mp4" type="video/mp4" />
 </video>
 
 We can see that the message is added to the list without needing to refresh the page. But the form is not reset after being submitted, which can be a little annoying.
@@ -253,7 +253,7 @@ Now, thanks to client features, we handle validation the same way on the client 
 Here is how our final guestbook looks like:
 
 <video controls>
-  <source src="/guestbook-2.mov" type="video/mp4" />
+  <source src="/assets/posts/server-components-actions-react-nextjs/guestbook-2.mp4" type="video/mp4" />
 </video>
 
 To be fair, these last improvements we made come with a cost: it isn’t possible anymore to use the form without having JavaScript enabled. I’ll let you decide whether it is worth it or not.

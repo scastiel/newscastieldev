@@ -1,18 +1,34 @@
 ---
 layout: default
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  {% if page.cover %}
-  <p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
-  {% endif %}
-  {{ content }}
-  {% if page.urls %}
-  <h2>Get the book</h2>
-  <ul>
-    {% for link in page.urls %}
-    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-</article>
+{% comment %}
+  Book detail. Cover + long (scraped) description + "Get the book" links.
+  Front matter: title, date, cover (optional), urls: [{label, url}, ...]
+  (first is styled as the primary button). Body (render_with_liquid:false)
+  holds the long description.
+{% endcomment %}
+<main class="page-main">
+  <p style="margin:44px 0 22px"><a class="backlink" href="/books">← Books</a></p>
+
+  <div class="book-detail">
+    <div class="book-cover book-cover--lg">{% if page.cover %}<img src="{{ page.cover }}" alt="Cover of {{ page.title }}">{% else %}cover{% endif %}</div>
+
+    <div class="body">
+      <h1 class="page-title" style="margin:0 0 6px">{{ page.title }}</h1>
+      {% if page.date %}<div class="year">{{ page.date | date: "%Y" }}</div>{% endif %}
+
+      <div class="post-body" style="margin-top:16px">
+        {{ content }}
+      </div>
+
+      {% if page.urls %}
+        <p class="eyebrow" style="margin:24px 0 10px">Get the book</p>
+        <div class="buy-links">
+          {% for l in page.urls %}
+            <a class="btn {% if forloop.first %}btn--primary{% endif %}" href="{{ l.url }}" rel="noopener">{{ l.label }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</main>
