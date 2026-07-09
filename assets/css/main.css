@@ -90,7 +90,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
 
 /* ---------- Layout wrappers ---------- */
 .wrap  { max-width: var(--page); margin-inline: auto; padding-inline: 28px; }
-.prose { max-width: var(--measure); margin-inline: auto; padding-inline: 28px; }
+.prose { max-width: var(--measure); margin-inline: auto; }
 /* index / home / text pages: a touch wider than reading measure */
 .page-main { max-width: 50rem; margin-inline: auto; padding-inline: 28px; padding-bottom: 8px; }
 .eyebrow { font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
@@ -233,7 +233,7 @@ a.card:hover, .card--link:hover { border-color: var(--accent); box-shadow: 0 6px
    Applied to the .post-body wrapper so content styles stay in the
    layout, never in the render_with_liquid:false content files.
    ============================================================ */
-.post-header { margin: 44px 0 0; }
+.post-header { margin: 44px auto 0; }
 .post-header .kicker { display: flex; gap: 8px; align-items: center; font-family: var(--font-head); font-size: 12px; font-weight: 700; margin-bottom: 12px; }
 .post-header .kicker .en { color: var(--accent); }
 .post-header .kicker .fr { color: var(--rust); }
@@ -242,7 +242,7 @@ a.card:hover, .card--link:hover { border-color: var(--accent); box-shadow: 0 6px
 .post-header .kicker .sep { color: var(--faint); }
 .post-header h1 { font-size: clamp(30px, 5vw, 38px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; margin: 0 0 10px; }
 .post-header .posted { font-family: var(--font-head); font-size: 13px; color: var(--faint); }
-.post-cover { border-radius: var(--radius); margin: 22px 0; }
+.post-cover { border-radius: var(--radius); margin: 22px auto; max-width: min(100%, var(--measure)); }
 
 .post-body { font-size: 18.5px; line-height: 1.75; }
 .post-body > * { max-width: var(--measure); margin-inline: auto; }
