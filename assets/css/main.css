@@ -205,8 +205,14 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 /* ---------- Grids for home teasers ---------- */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-/* ---------- Books ---------- */
-.book-row { display: flex; gap: 20px; padding: 20px; margin-bottom: 12px; }
+/* ---------- Books (two-section rail + body, mirrors article-row) ---------- */
+.book-row { display: flex; gap: 18px; padding: 20px; margin-bottom: 12px; }
+.book-row .rail {
+  width: 104px; flex-shrink: 0; display: flex; flex-direction: column;
+  align-items: flex-start; gap: 8px;
+  border-right: 1px solid var(--hair); padding-right: 14px;
+}
+.book-body { min-width: 0; }
 .book-cover {
   flex-shrink: 0; border-radius: 4px; background: repeating-linear-gradient(135deg, var(--ph1), var(--ph1) 8px, var(--ph2) 8px, var(--ph2) 16px);
   display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 9px; color: var(--ph-label);
@@ -214,8 +220,9 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .book-cover--sm { width: 58px; height: 84px; }
 .book-cover--md { width: 74px; height: 106px; }
 .book-cover--lg { width: 200px; height: 290px; border-radius: 6px; box-shadow: 0 12px 30px var(--accent-soft); }
-.book-row h3 { margin: 0; font-size: 18px; font-weight: 700; }
+.book-body h3 { margin: 0 0 6px; font-size: 18px; font-weight: 700; line-height: 1.25; }
 .book-row .year { font-family: var(--font-mono); font-size: 11px; color: var(--faint); }
+.book-desc { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
 .book-row .stores { font-family: var(--font-mono); font-size: 12px; color: var(--accent); margin-top: 8px; }
 
 /* book detail */
@@ -226,30 +233,40 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .btn:hover { border-color: var(--accent); text-decoration: none; }
 .btn--primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-/* ---------- Projects ---------- */
-.project { padding: 20px; margin-bottom: 12px; }
-.project-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+/* ---------- Projects (two-section rail + body, mirrors article-row) ---------- */
+.project-row { display: flex; gap: 18px; padding: 20px; margin-bottom: 12px; }
+.project-row .rail {
+  width: 104px; flex-shrink: 0; display: flex; flex-direction: column;
+  align-items: flex-start; gap: 8px;
+  border-right: 1px solid var(--hair); padding-right: 14px;
+}
+.project-body { min-width: 0; }
 .project-logo { width: 34px; height: 34px; border-radius: 8px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 12px; font-weight: 800; color: var(--accent); }
-.project h3 { margin: 0; font-size: 18px; font-weight: 700; }
-.project .since { font-family: var(--font-mono); font-size: 11px; color: var(--faint); }
+.project-body h3 { margin: 0 0 8px; font-size: 18px; font-weight: 700; }
+.project-row .since { font-family: var(--font-mono); font-size: 11px; color: var(--faint); }
 .badge-sold { font-family: var(--font-head); font-size: 10px; font-weight: 700; color: var(--rust); background: var(--rust-soft); border-radius: 999px; padding: 3px 9px; text-transform: uppercase; }
-.tech { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 0; padding: 0; list-style: none; }
-.tech li { font-family: var(--font-mono); font-size: 10px; border: 1px solid var(--border); border-radius: 5px; padding: 2px 7px; color: var(--faint); }
-.project details { border-top: 1px solid var(--hair); margin-top: 12px; padding-top: 12px; }
-.project summary { cursor: pointer; font-family: var(--font-head); font-size: 13px; font-weight: 600; color: var(--accent); list-style: none; }
-.project summary::-webkit-details-marker { display: none; }
-.project summary::before { content: "▸ "; }
-.project details[open] summary::before { content: "▾ "; }
-.project details p { font-size: 15px; color: var(--muted); margin: 12px 0 0; }
+.project-desc { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.6; }
+.project-row .tech { display: flex; gap: 4px; flex-wrap: wrap; margin: 2px 0 0; padding: 0; list-style: none; }
+.project-row .tech li { font-family: var(--font-mono); font-size: 9px; line-height: 1.4; border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; color: var(--faint); }
+.project-more { border-top: 1px solid var(--hair); margin-top: 12px; padding-top: 12px; }
+.project-more p { font-size: 15px; color: var(--muted); margin: 0 0 12px; }
+.project-more p:last-child { margin-bottom: 0; }
 
-/* ---------- Talks ---------- */
-.talk { padding: 20px; margin-bottom: 12px; }
-.talk--upcoming { border-color: var(--accent-line); background: var(--accent-soft); }
-.talk h3 { margin: 0 0 8px; font-size: 18px; font-weight: 700; }
-.talk-meta { display: flex; gap: 16px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-bottom: 10px; }
-.talk-meta a { color: var(--accent); }
-.talk p { margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--muted); }
-.talk .fr-note { font-family: var(--font-head); font-size: 12px; font-style: italic; color: var(--faint); display: inline-block; margin-top: 6px; }
+/* ---------- Talks (two-section rail + body, mirrors article-row) ---------- */
+.talk-row { display: flex; gap: 18px; padding: 20px; margin-bottom: 12px; }
+.talk-row .rail {
+  width: 104px; flex-shrink: 0; display: flex; flex-direction: column; gap: 5px;
+  border-right: 1px solid var(--hair); padding-right: 14px;
+}
+.talk-date { font-family: var(--font-head); font-size: 13px; font-weight: 600; color: var(--accent); }
+.talk-venues { font-family: var(--font-head); font-size: 11px; line-height: 1.4; color: var(--faint); }
+.talk-venues a { color: var(--faint); }
+.talk-venues a:hover { color: var(--accent); }
+.talk-body { min-width: 0; }
+.talk-body h3 { margin: 0 0 6px; font-size: 18px; font-weight: 700; line-height: 1.25; }
+.talk-links { font-family: var(--font-mono); font-size: 12px; color: var(--accent); margin-bottom: 10px; }
+.talk-desc { margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--muted); }
+.talk-row .fr-note { font-family: var(--font-head); font-size: 12px; font-style: italic; color: var(--faint); display: inline-block; margin-top: 8px; }
 
 /* ============================================================
    Article body (post layout) — the reading experience.
@@ -265,10 +282,10 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .post-header .kicker .sep { color: var(--faint); }
 .post-header h1 { font-size: clamp(30px, 5vw, 38px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; margin: 0 0 10px; }
 .post-header .posted { font-family: var(--font-head); font-size: 13px; color: var(--faint); }
-.post-cover { border-radius: var(--radius); margin: 22px auto; max-width: min(100%, var(--measure)); }
+.post-cover { border-radius: var(--radius); margin: 22px auto; width: 100%; }
 
 .post-body { font-size: 18.5px; line-height: 1.75; }
-.post-body > * { max-width: var(--measure); margin-inline: auto; }
+.post-body > * { margin-inline: auto; }
 .post-body h2 { font-size: 23px; font-weight: 700; margin: 34px auto 12px; }
 .post-body h3 { font-size: 19px; font-weight: 700; margin: 26px auto 10px; }
 .post-body p, .post-body ul, .post-body ol { margin: 0 auto 18px; }
@@ -280,7 +297,7 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
    the reading column like images: block, centered, never wider than the column. */
 .post-body svg, .post-body video {
   display: block; height: auto; margin: 8px auto 22px;
-  max-width: min(100%, var(--measure)); border-radius: var(--radius);
+  max-width: 100%; border-radius: var(--radius);
 }
 .post-body video { width: 100%; background: var(--code-bg); }
 .post-body figure { margin: 8px auto 22px; }
@@ -297,7 +314,7 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .post-body pre {
   background: var(--code-bg); color: #d7dae0; border-radius: var(--radius);
   padding: 18px 20px; overflow-x: auto; font-family: var(--font-mono);
-  font-size: 13.5px; line-height: 1.65; margin: 0 auto 18px; max-width: var(--measure);
+  font-size: 13.5px; line-height: 1.65; margin: 0 auto 18px;
 }
 .post-body pre code { background: none; padding: 0; font-size: inherit; }
 
@@ -332,6 +349,12 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
   .grid-2 { grid-template-columns: 1fr; }
   .article-row { flex-direction: column; gap: 8px; }
   .article-row .rail { flex-direction: row; width: auto; border-right: 0; border-bottom: 1px solid var(--hair); padding: 0 0 8px; gap: 10px; }
+  .project-row { flex-direction: column; gap: 12px; }
+  .project-row .rail { flex-direction: row; align-items: center; width: auto; border-right: 0; border-bottom: 1px solid var(--hair); padding: 0 0 12px; gap: 10px; }
+  .book-row { flex-direction: column; gap: 12px; }
+  .book-row .rail { flex-direction: row; align-items: center; width: auto; border-right: 0; border-bottom: 1px solid var(--hair); padding: 0 0 12px; gap: 14px; }
+  .talk-row { flex-direction: column; gap: 10px; }
+  .talk-row .rail { flex-direction: row; align-items: baseline; width: auto; border-right: 0; border-bottom: 1px solid var(--hair); padding: 0 0 10px; gap: 12px; }
   .post-body { font-size: 17.5px; }
 }
 
