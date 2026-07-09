@@ -120,7 +120,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
    attribute). Styled to match the theme toggle. */
 .nav-toggle {
   display: none; align-items: center; gap: 9px; cursor: pointer;
-  font-family: var(--font-head); font-size: 13px; font-weight: 600;
+  font-family: var(--font-head); font-size: 13px; font-weight: 600; line-height: 1;
   color: var(--text); background: var(--surface); border: 1px solid var(--border);
   border-radius: 999px; padding: 7px 14px;
 }
