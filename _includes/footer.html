@@ -1,9 +1,35 @@
-<footer>
-  <nav>
-    <a href="{{ site.social.linkedin }}">LinkedIn</a> ·
-    <a href="{{ site.social.github }}">GitHub</a> ·
-    <a href="{{ site.social.youtube }}">YouTube</a> ·
+<footer class="site-footer">
+  <div class="social">
+    <a href="{{ site.social.linkedin }}" rel="me">LinkedIn</a>
+    <a href="{{ site.social.github }}" rel="me">GitHub</a>
+    <a href="{{ site.social.youtube }}" rel="me">YouTube</a>
+    <a href="{{ site.social.twitter }}" rel="me">Twitter</a>
     <a href="/contact">Contact</a>
-  </nav>
-  <p><small>Content licensed under Creative Commons BY-NC-SA. © Sebastien Castiel.</small></p>
+  </div>
+  <div>Content licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC&nbsp;BY-NC-SA&nbsp;4.0</a> · © Sebastien Castiel</div>
 </footer>
+
+{# Optional manual theme toggle. Site works fully without JS (system
+   preference via CSS); this just lets a visitor override it. #}
+<script>
+  (function () {
+    function current() {
+      return (
+        document.documentElement.getAttribute("data-theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      );
+    }
+    function label() {
+      var el = document.querySelector("[data-theme-label]");
+      if (el) el.textContent = current() === "dark" ? "Light" : "Dark";
+    }
+    window.__toggleTheme = function () {
+      var next = current() === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      label();
+    };
+    label();
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", label);
+  })();
+</script>

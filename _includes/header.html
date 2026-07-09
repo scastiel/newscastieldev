@@ -1,11 +1,13 @@
-<header>
-  <strong><a href="/">{{ site.title }}</a></strong>
-  <nav>
-    <a href="/articles">Articles</a> ·
-    <a href="/books">Books</a> ·
-    <a href="/projects">Projects</a> ·
-    <a href="/talks">Talks</a> ·
-    <a href="/me">About</a> ·
-    <a href="/contact">Contact</a>
+{% assign p = page.url %}
+<header class="site-header">
+  <a class="site-title" href="/">scastiel<span>.dev</span></a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="/articles" {% if p contains '/articles' or page.layout == 'post' %}aria-current="page"{% endif %}>Articles</a>
+    <a href="/books"    {% if p contains '/books'    or page.layout == 'book' %}aria-current="page"{% endif %}>Books</a>
+    <a href="/projects" {% if p contains '/projects' %}aria-current="page"{% endif %}>Projects</a>
+    <a href="/talks"    {% if p contains '/talks'    %}aria-current="page"{% endif %}>Talks</a>
+    <a href="/me"       {% if p contains '/me'       %}aria-current="page"{% endif %}>About</a>
+    <a href="/contact"  {% if p contains '/contact'  %}aria-current="page"{% endif %}>Contact</a>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" onclick="__toggleTheme(this)">◐ <span data-theme-label>Theme</span></button>
   </nav>
 </header>
