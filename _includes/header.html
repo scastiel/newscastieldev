@@ -1,7 +1,16 @@
 {% assign p = page.url %}
 <header class="site-header">
   <a class="site-title" href="/">scastiel<span>.dev</span></a>
-  <nav class="site-nav" aria-label="Primary">
+  {%- comment -%}
+    Hamburger toggle for small screens. `hidden` by default so it never shows
+    when JS is off (the nav then stays fully visible / accessible); the footer
+    script reveals it and wires up aria-expanded + Escape-to-close.
+  {%- endcomment -%}
+  <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+    <span class="nav-toggle-bars" aria-hidden="true"></span>
+    <span class="nav-toggle-text">Menu</span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="Primary">
     <a href="/articles" {% if p contains '/articles' or page.layout == 'post' %}aria-current="page"{% endif %}>Articles</a>
     <a href="/books"    {% if p contains '/books'    or page.layout == 'book' %}aria-current="page"{% endif %}>Books</a>
     <a href="/projects" {% if p contains '/projects' %}aria-current="page"{% endif %}>Projects</a>

@@ -40,6 +40,9 @@
 {%- endcomment -%}
 <script>
   (function () {
+    // Mark JS as available (before paint) so the nav can safely collapse behind
+    // the hamburger on small screens; without JS the nav stays fully visible.
+    document.documentElement.classList.add("js");
     try {
       var t = localStorage.getItem("theme");
       if (t) document.documentElement.setAttribute("data-theme", t);
