@@ -8,7 +8,7 @@ excerpt: >-
   you arrive early on the morning. (Short night though.) For the return it’s
   even shorter: you land only a couple hours after taking off, thanks to the
   time shift.
-cover: /assets/posts/one-year-as-a-morning-person/cover.jpg
+cover: /assets/posts/one-year-as-a-morning-person/cover.webp
 lang: en
 tags:
   - life
@@ -31,7 +31,7 @@ first to arrive at the office, and the morning can be very productive.
 Unfortunately after a few days the magic disappears, and you welcome back your
 alarm clock.
 
-![Photo by <a href='https://unsplash.com/@itsdavo'>David Mao</a>.](/assets/posts/one-year-as-a-morning-person/coffee.jpg)
+![Photo by <a href='https://unsplash.com/@itsdavo'>David Mao</a>.](/assets/posts/one-year-as-a-morning-person/coffee.webp)
 
 Last summer I took a decision I’ve never regretted. Instead of letting the
 “normal” rhythm come back, I set my alarm to 6am every morning. The first days I
@@ -54,7 +54,7 @@ easy habit for me to take), I missed arriving at work at 7. Mornings seemed
 shorter and less productive than before. So new decision: from this moment I
 would get up at 5:30 and go straight to the gym.
 
-![Photo by <a href='https://unsplash.com/@gpthree'>George Pagan III</a>.](/assets/posts/one-year-as-a-morning-person/gym.jpg)
+![Photo by <a href='https://unsplash.com/@gpthree'>George Pagan III</a>.](/assets/posts/one-year-as-a-morning-person/gym.webp)
 
 I didn’t even take the time to take a shower, nor to have breakfast. I figured
 out that to keep the habit and the motivation to go to the gym, I needed to go
@@ -97,7 +97,7 @@ early than before. A year ago, I used to get up at 10 or 11 on weekends. Now
 it’s usually around 8, almost never after 9. And it didn’t make me stop getting
 up at 5:15 the other days.
 
-![The kind of photo you can make if you get up early in Montreal <a href='https://www.instagram.com/p/BqUp48BhIxd/'>(Instagram)</a>](/assets/posts/one-year-as-a-morning-person/old_port_montreal.jpg)
+![The kind of photo you can make if you get up early in Montreal <a href='https://www.instagram.com/p/BqUp48BhIxd/'>(Instagram)</a>](/assets/posts/one-year-as-a-morning-person/old_port_montreal.webp)
 
 Finally, when I started getting up early, I expected of myself to get up early
 no matter what. There were a few times I went home after midnight after a few
@@ -117,7 +117,7 @@ Usually one I read on my Kobo e-reader during commute, one I listened at the gym
 and each time I was doing something that didn’t require a lot of concentration
 (cooking, house cleaning…), and one I read at home.
 
-![Two of my preferred nonfiction books, by Cal Newport <a href='https://www.goodreads.com/author/show/147891.Cal_Newport'>(Goodreads)</a>](/assets/posts/one-year-as-a-morning-person/cal-newport-books.jpg)
+![Two of my preferred nonfiction books, by Cal Newport <a href='https://www.goodreads.com/author/show/147891.Cal_Newport'>(Goodreads)</a>](/assets/posts/one-year-as-a-morning-person/cal-newport-books.webp)
 
 Among the books I preferred and still considered as some of the best books I’ve
 read, _Deep Work_ by Cal Newport. It guided me to make my work days more
@@ -131,7 +131,7 @@ related to my new morning routine.
 
 <div class="inset-right-image">
 
-![Miracle Morning by Hal Elrod <a href='https://www.goodreads.com/book/show/17166225-the-miracle-morning'>(Goodreads)</a>](/assets/posts/one-year-as-a-morning-person/miracle-morning.jpg)
+![Miracle Morning by Hal Elrod <a href='https://www.goodreads.com/book/show/17166225-the-miracle-morning'>(Goodreads)</a>](/assets/posts/one-year-as-a-morning-person/miracle-morning.webp)
 
 </div>
 
@@ -166,7 +166,7 @@ fresh new start. For instance, a few weeks ago I started journaling thanks to
 [Day One](https://dayoneapp.com/) app. I will definitely re-introduce writing
 and meditation into my morning routine.
 
-![Photo by <a href='https://unsplash.com/@dsmacinnes'>Danielle MacInnes</a>.](/assets/posts/one-year-as-a-morning-person/coffee-02.jpg)
+![Photo by <a href='https://unsplash.com/@dsmacinnes'>Danielle MacInnes</a>.](/assets/posts/one-year-as-a-morning-person/coffee-02.webp)
 
 Sometimes you take decisions without having thought a lot about it before, and
 they reveal themselves to be some of the best decisions you’ve ever made. This

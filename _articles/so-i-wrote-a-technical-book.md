@@ -6,7 +6,7 @@ excerpt: >-
   couldn’t be prouder. Eight months, and it was not easy, but it’s so worth it.
   In this post I wanted to expose a few thoughts about what happens when you
   write a technical book.
-cover: /assets/posts/so-i-wrote-a-technical-book/cover.jpg
+cover: /assets/posts/so-i-wrote-a-technical-book/cover.webp
 lang: en
 tags:
   - life
@@ -24,7 +24,7 @@ Actually this isn’t my first eBook, I already wrote one about Node.js a few
 years ago. But it was much smaller, and I was decided to dedicate a lot more
 energy in this new one.
 
-![My first eBook (left) and the new one (right).<br/>I took the opportunity to make similar covers!](/assets/posts/so-i-wrote-a-technical-book/books.png)
+![My first eBook (left) and the new one (right).<br/>I took the opportunity to make similar covers!](/assets/posts/so-i-wrote-a-technical-book/books.webp)
 
 I love writing technical articles (on this blog or other platforms such as
 [Dev.to](https://dev.to)), and I always thought I’d like to write another book.
@@ -92,7 +92,7 @@ Now my book is available on LeanPub and Amazon, I sold a few copies on the first
 coupe of days and it’s awesome! I’m waiting for some reviews, comments,
 suggestions…
 
-![My favorite e-mails these days!](/assets/posts/so-i-wrote-a-technical-book/mails.png)
+![My favorite e-mails these days!](/assets/posts/so-i-wrote-a-technical-book/mails.webp)
 
 I also started a blog with posts in French,
 [MasterReact.io](https://www.masterreact.io), which will be a good complement to

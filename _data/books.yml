@@ -2,7 +2,7 @@
 - slug: pull-requests-code-review
   title: "Pull Requests and Code Review: Best Practices for Developers, from Junior to Team Lead"
   date: 2023-10-11
-  cover: "/assets/book-covers/pull-requests-code-review.jpg"
+  cover: "/assets/book-covers/pull-requests-code-review.webp"
   description: "Unlock the secrets to masterful pull requests and collaborative code reviews with practical insights from years of experience, all packed in one comprehensive guide!"
   has_page: true
   urls:
@@ -15,7 +15,7 @@
 - slug: serverless-nextjs
   title: "Serverless Web Applications with React and Next.js"
   date: 2022-12-01
-  cover: "/assets/book-covers/serverless-web-apps-cover.jpg"
+  cover: "/assets/book-covers/serverless-web-apps-cover.webp"
   description: "A short guide to using Next.js to create full-stack applications with React, enjoying serverless features to authenticate users and use databases."
   has_page: true
   urls:
@@ -26,7 +26,7 @@
 - slug: net-worth-tracker-kotlin
   title: "Create your Net Worth Tracker with Kotlin"
   date: 2022-04-01
-  cover: "/assets/book-covers/kotlin-net-worth.jpg"
+  cover: "/assets/book-covers/kotlin-net-worth.webp"
   description: "I wrote a book about Kotlin to document what I learned when I discovered the language."
   has_page: true
   urls:
@@ -35,7 +35,7 @@
 - slug: use-hooks
   title: "A Guide to React Hooks"
   date: 2021-05-01
-  cover: "/assets/book-covers/guide-react-hooks.png"
+  cover: "/assets/book-covers/guide-react-hooks.webp"
   description: "A book I made with the content of my interactive course useEffect.dev."
   has_page: true
   urls:
@@ -46,7 +46,7 @@
 - slug: react-french
   title: "React: Développez le Front End de vos applications web et mobiles (…)"
   date: 2020-01-20
-  cover: "/assets/book-covers/react-french.jpg"
+  cover: "/assets/book-covers/react-french.webp"
   description: "A book in French teaching React to beginners."
   has_page: false
   urls:
@@ -57,7 +57,7 @@
 - slug: nodejs-french
   title: "Découvrez Node.js en quelques heures"
   date: 2018-01-20
-  cover: "/assets/book-covers/nodejs-french.png"
+  cover: "/assets/book-covers/nodejs-french.webp"
   description: "A book in French teaching Node.js to beginners."
   has_page: false
   urls:

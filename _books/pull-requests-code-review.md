@@ -3,7 +3,7 @@ title: >-
   Pull Requests and Code Review: Best Practices for Developers, from Junior to
   Team Lead
 date: '2023-10-11'
-cover: /assets/book-covers/pull-requests-code-review.jpg
+cover: /assets/book-covers/pull-requests-code-review.webp
 description: >-
   Unlock the secrets to masterful pull requests and collaborative code reviews
   with practical insights from years of experience, all packed in one

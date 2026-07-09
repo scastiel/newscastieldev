@@ -6,7 +6,7 @@ excerpt: >-
   is not enough to become better at your job. Of course, it’s a very important
   thing, but some soft-skills can make you not only better but one of the best.
   And I decided to accept the challenge: explore them and put them into a book!
-cover: /assets/posts/im-writing-a-new-book/cover.jpg
+cover: /assets/posts/im-writing-a-new-book/cover.webp
 lang: en
 tags:
   - life
@@ -20,7 +20,7 @@ And I decided to accept the challenge: explore them and put them into a book!
 TL;DR: Know more about the book and subscribe to updates on
 [its LeanPub page](https://leanpub.com/outstanding-developer)!
 
-![A first version of the book cover and the LeanPub page. Nothing is definitive 😉](/assets/posts/im-writing-a-new-book/leanpub.png)
+![A first version of the book cover and the LeanPub page. Nothing is definitive 😉](/assets/posts/im-writing-a-new-book/leanpub.webp)
 
 A year ago, I finished
 [writing a book in French about React](/assets/posts/2019-02-14-so-i-wrote-a-technical-book/).
@@ -63,7 +63,7 @@ chapters:
 Nothing is definitive, I may insert new chapters during the writing process,
 maybe thanks to suggestions from some readers.
 
-![A mind map is the perfect tool for pre-writing research](/assets/posts/im-writing-a-new-book/mind-map.png)
+![A mind map is the perfect tool for pre-writing research](/assets/posts/im-writing-a-new-book/mind-map.webp)
 
 Note that my goal is not to list pieces of advice like “do this” or “don’t do
 that”. I give a big importance to what is said in the literature (I already

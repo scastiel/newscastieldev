@@ -7,7 +7,7 @@ excerpt: >-
   valuable contributions to code quality and their own growth. Code reviews are
   essential for skill development and fostering collaboration within development
   teams.
-cover: /assets/posts/code-review-junior-developer/cover.jpg
+cover: /assets/posts/code-review-junior-developer/cover.webp
 ---
 
 “The code must be reviewed by senior developers.” “A review by a junior is nice, but their approval is worth nothing.” If you’ve never heard these phrases, you’re lucky. Of course, they’re completely wrong.

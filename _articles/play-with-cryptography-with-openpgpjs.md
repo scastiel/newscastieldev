@@ -6,7 +6,7 @@ excerpt: >-
   it, you should definitively give it a look! The mails are encrypted
   _end-to-end_, which means that ProtonMail has absolutely no readable version
   of the stored emails, nor any key to decrypt them.
-cover: /assets/posts/play-with-cryptography-with-openpgpjs/cover.jpg
+cover: /assets/posts/play-with-cryptography-with-openpgpjs/cover.webp
 redirect_from:
   - /posts/003-play-with-cryptography-with-openpgpjs.html
 lang: en

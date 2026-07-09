@@ -5,7 +5,7 @@ excerpt: >-
   If you use JavaScript you probably know that recently a lot of new features
   arrived with ES2015 (also known as ES6): classes, const/let keywords,
   destructuring arrays and objects, modules and imports, etc.
-cover: /assets/posts/use-the-coolest-es6-features-everywhere/cover.jpg
+cover: /assets/posts/use-the-coolest-es6-features-everywhere/cover.webp
 redirect_from:
   - /posts/002-use-the-coolest-es6-features-everywhere.html
 lang: en

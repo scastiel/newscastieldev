@@ -5,7 +5,7 @@ excerpt: >-
   When twenty developers were asked to keep a precise diary of what tasks they
   worked on during the day minute by minute, the results were surprising. Maybe
   you don’t code as much as you think you do during a day…
-cover: /assets/posts/on-distraction-and-developer-productivity/cover.jpg
+cover: /assets/posts/on-distraction-and-developer-productivity/cover.webp
 lang: en
 tags:
   - life
@@ -53,7 +53,7 @@ seconds before switching. Not even a minute! Of course, sometimes you code
 during much more time, but it’s compensated by the several other times you code
 for just a few seconds before being interrupted.
 
-![Photo by ThisisEngineering RAEng](/assets/posts/on-distraction-and-developer-productivity/thisisengineering.jpg)
+![Photo by ThisisEngineering RAEng](/assets/posts/on-distraction-and-developer-productivity/thisisengineering.webp)
 
 The other tasks follow the same pattern, except the planned meetings (it’s more
 difficult to leave a meeting after one minute I guess). So, looking at the
@@ -115,7 +115,7 @@ others that we were busy and preferred not to be disturbed. Sometimes, it was
 having headphones on. Other times, we used the status of our instant messaging
 application, setting it to _busy_.
 
-![Photo by Megan Markham](/assets/posts/on-distraction-and-developer-productivity/notnow.jpg)
+![Photo by Megan Markham](/assets/posts/on-distraction-and-developer-productivity/notnow.webp)
 
 But one of the most efficient systems we found was not a specific sign to
 indicate we were busy. I still try to initiate it with the teams I work in

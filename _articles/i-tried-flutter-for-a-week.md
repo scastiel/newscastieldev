@@ -6,7 +6,7 @@ excerpt: >-
   supposed to be a concurrent for React. I’m a huge fan of React, and on the
   paper Flutter has all the arguments. And that made me want to try, so last
   week I decided to learn Flutter by making a small iOS application.
-cover: /assets/posts/i-tried-flutter-for-a-week/cover.jpg
+cover: /assets/posts/i-tried-flutter-for-a-week/cover.webp
 lang: en
 tags:
   - dev
@@ -42,7 +42,7 @@ of the lack of explanations on a tool to install or some syntax. And the basic
 setup is very quick. In a few minutes you start your first application. Which
 brings me to the developer experience.
 
-![Codelabs on Flutter website are a very good start!](/assets/posts/i-tried-flutter-for-a-week/flutter-codelab.png)
+![Codelabs on Flutter website are a very good start!](/assets/posts/i-tried-flutter-for-a-week/flutter-codelab.webp)
 
 ## Great: the developer experience
 
@@ -57,7 +57,7 @@ Also, the extension for VSCode takes care of everything. Start your application
 by pressing F5, and debug with breakpoints directly in VSCode without
 configuring anything else. This is quite impressing.
 
-![VSCode is perfect to develop with Flutter](/assets/posts/i-tried-flutter-for-a-week/vscode.png)
+![VSCode is perfect to develop with Flutter](/assets/posts/i-tried-flutter-for-a-week/vscode.webp)
 
 ## Awesome: the available components
 
@@ -74,7 +74,7 @@ keeping things as simple as possible (using default rendering settings) and if
 possible respecting [Material Design guidelines](https://material.io/), you can
 create a _good-enough-looking_ app without too much effort.
 
-![A lot of Material components out of the box](/assets/posts/i-tried-flutter-for-a-week/material.png)
+![A lot of Material components out of the box](/assets/posts/i-tried-flutter-for-a-week/material.webp)
 
 ## Meh: the language: Dart
 

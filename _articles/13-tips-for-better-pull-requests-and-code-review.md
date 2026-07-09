@@ -17,13 +17,13 @@ Tell me if you find them helpful, or if you can think of some more 😉.
 
 A PR draft helps you organize your ideas and document your progress, while you’re still working on your feature.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-01.png)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-01.webp)
 
 ## 2. Make people want to review your PR
 
 The best way to get a quick and efficient review is to keep your PR small and well documented (with all the necessary context). You’ll also increase you chances for future PRs by delivering great code now!
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-02.png)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-02.webp)
 
 <aside class="text-center" style="text-wrap: balance">
 
@@ -35,19 +35,19 @@ The best way to get a quick and efficient review is to keep your PR small and we
 
 Put yourself in the shoes of your reviewer, anticipate questions and use comment your own code when you think it can help them.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-03.png)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-03.webp)
 
 ## 4. Assign the right reviewers to your PR
 
 Don’t assign your PR to the entire world. Choose your reviewers carefully to get a relevant review, without waiting too long for approval.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-04.png)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-04.webp)
 
 ## 5. Be responsive to comments
 
 Be open to feedback, ask for clarification, say when you disagree (with respect), and always respond to comments.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-05.png)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-05.webp)
 
 ## 6. If you want people to review your PRs, you have to review theirs
 
@@ -59,25 +59,25 @@ As a junior developer, you can let others know when you don’t understand part 
 
 More about it in my post [How to give code review as a junior developer?](/code-review-junior-developer).
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-07.jpeg)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-07.webp)
 
 ## 8. Check the right things during code review
 
 Code review’s goal is to check for bugs and edge cases, and challenge the implementation. It should neither be used to nitpick about minor formatting or styling preferences, nor for large-scale architectural discussions.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-08.jpeg)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-08.webp)
 
 ## 9. Use the right tone in your comments
 
 Use “why not” instead of “you should”, be open and positive and always suggest an alternative when you ask for a change.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-09.jpeg)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-09.webp)
 
 ## 10. Be clear about whether a change is required for you to approve the PR or not
 
 Not all comments require a change, and not all asked changes are required for the PR to be approved. Be clear in your comment if the change isn’t urgent.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-10.jpeg)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-10.webp)
 
 ## 11. Review your review before submitting it
 
@@ -91,7 +91,7 @@ You don’t want the reviewer to wait for your approval two days after they made
 
 When a comment thread becomes a debate in your PR, you’d better cut it off and suggest to continue the discussion elsewhere, e.g. in a Slack thread. If necessary, dedicate a meeting to it, and/or involve a third-party.
 
-![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-13.jpeg)
+![](/assets/posts/13-tips-for-better-pull-requests-and-code-review/prcr-13.webp)
 
 ---
 

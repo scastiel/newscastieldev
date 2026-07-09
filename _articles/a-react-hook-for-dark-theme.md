@@ -7,7 +7,7 @@ excerpt: >-
   a light one and a dark one. In this article we’ll see how it is possible to
   offer two themes in your React application, using the one the user prefers by
   default.
-cover: /assets/posts/a-react-hook-for-dark-theme/cover.jpg
+cover: /assets/posts/a-react-hook-for-dark-theme/cover.webp
 lang: en
 tags:
   - dev

@@ -6,7 +6,7 @@ excerpt: >-
   to practice. Or you may want to learn new ones, but your daily job doesn’t
   give you the opportunity. Side projects are an excellent way to solve these
   problems.
-cover: /assets/posts/the-case-for-side-projects/cover.jpg
+cover: /assets/posts/the-case-for-side-projects/cover.webp
 lang: en
 tags:
   - dev
@@ -34,7 +34,7 @@ give me much motivation for writing the next chapters 🙂
 
 <a class="book-container" href="https://theoutstanding.dev">
   <div class="book">
-    <img alt="The Outstanding Developer" src="/assets/posts/the-case-for-side-projects/new-book-cover.png"/>
+    <img alt="The Outstanding Developer" src="/assets/posts/the-case-for-side-projects/new-book-cover.webp"/>
   </div>
 </a>
 
@@ -78,7 +78,7 @@ a professional environment, where too many times there are too many
 intermediaries between us developers and the final user. Again, in your project,
 you’re in charge of everything, including understanding your users’ needs.
 
-![Photo by Daniel McCullough](/assets/posts/the-case-for-side-projects/architect.jpg)
+![Photo by Daniel McCullough](/assets/posts/the-case-for-side-projects/architect.webp)
 
 So even if you’re doing your side project to learn a technical skill, it’s okay
 if this skill is just a small part of the project. Imagine you want to learn how
@@ -102,7 +102,7 @@ focus on what is important to them, more than spending time on the details
 because even if your project is not that ambitious, you may have a good surprise
 if it has a little success. Again a huge motivation to keep working on it.
 
-![Photo by Luca Upper](/assets/posts/the-case-for-side-projects/balloons.jpg)
+![Photo by Luca Upper](/assets/posts/the-case-for-side-projects/balloons.webp)
 
 So a good idea to approach your side project from the beginning would be to
 start small. Your first goal should be to release something usable, even if all

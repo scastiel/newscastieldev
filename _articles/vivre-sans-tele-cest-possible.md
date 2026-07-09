@@ -8,7 +8,7 @@ excerpt: >-
   salon, et elle est même souvent allumée. Pour regarder des films, des séries
   sur Netflix ou autres, mais quasiment jamais sur la « télé » au sens « chaînes
   de télé ».
-cover: /assets/posts/vivre-sans-tele-cest-possible/cover.jpg
+cover: /assets/posts/vivre-sans-tele-cest-possible/cover.webp
 lang: fr
 tags:
   - life
@@ -22,7 +22,7 @@ toujours en pièce maîtresse de mon salon, et elle est même souvent allumée. 
 regarder des films, des séries sur Netflix ou autres, mais quasiment jamais sur
 la « télé » au sens « chaînes de télé ».
 
-![<a href='https://flic.kr/p/nAQB1V'>Source</a>](/assets/posts/vivre-sans-tele-cest-possible/tele02.jpg)
+![<a href='https://flic.kr/p/nAQB1V'>Source</a>](/assets/posts/vivre-sans-tele-cest-possible/tele02.webp)
 
 Comme pour Joël, il y a encore quelques mois, la télé occupait une grande part
 de mon rythme de vie.
@@ -59,7 +59,7 @@ Voici les quelques constats que je fais avec le recul :
   culturelles. Et parce que je regarde beaucoup de films, j’entretiens mon côté
   cinéphile.
 
-![<a href='https://www.flickr.com/photos/dannysoar/12225457465/'>Source</a>](/assets/posts/vivre-sans-tele-cest-possible/tele01.jpg)
+![<a href='https://www.flickr.com/photos/dannysoar/12225457465/'>Source</a>](/assets/posts/vivre-sans-tele-cest-possible/tele01.webp)
 
 À présent tout ceci me paraît un brin ridicule. Je n’ai pas arrêté la télé comme
 ça parce que je l’avais décidé du jour au lendemain. Juste parce qu’un jour je

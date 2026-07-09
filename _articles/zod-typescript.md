@@ -7,7 +7,7 @@ excerpt: >-
   us, such as Yup or Zod. But recently, I realized that these libraries allow
   patterns that go much farther than input validation. In this post, I’ll show
   you why I now use them in most of my TypeScript projects.
-cover: /assets/posts/zod-typescript/cover.jpg
+cover: /assets/posts/zod-typescript/cover.webp
 ---
 
 If you have ever created an API or a form accepting user input, you know what data validation is, and how tedious it can be. Fortunately, libraries can help us, such as Yup or Zod. But recently, I realized that these libraries allow patterns that go much farther than input validation. In this post, I’ll show you why I now use them in most of my TypeScript projects.

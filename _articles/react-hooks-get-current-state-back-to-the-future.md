@@ -5,7 +5,7 @@ excerpt: >-
   React Hooks are trully awesome, but the more I play with them the more I
   discover tricks, and sometimes spend a lot of time figuring out why my code
   doesn’t do what it is supposed to.
-cover: /assets/posts/react-hooks-get-current-state-back-to-the-future/cover.jpg
+cover: /assets/posts/react-hooks-get-current-state-back-to-the-future/cover.webp
 lang: en
 tags:
   - dev

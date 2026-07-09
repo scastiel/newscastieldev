@@ -1,7 +1,7 @@
 ---
 title: Serverless Web Applications with React and Next.js
 date: '2022-12-01'
-cover: /assets/book-covers/serverless-web-apps-cover.jpg
+cover: /assets/book-covers/serverless-web-apps-cover.webp
 description: >-
   A short guide to using Next.js to create full-stack applications with React,
   enjoying serverless features to authenticate users and use databases.

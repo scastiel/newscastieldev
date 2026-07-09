@@ -1,7 +1,7 @@
 ---
 title: Create your Net Worth Tracker with Kotlin
 date: '2022-04-01'
-cover: /assets/book-covers/kotlin-net-worth.jpg
+cover: /assets/book-covers/kotlin-net-worth.webp
 description: >-
   I wrote a book about Kotlin to document what I learned when I discovered the
   language.

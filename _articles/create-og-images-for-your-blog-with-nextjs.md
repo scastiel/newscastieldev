@@ -5,13 +5,13 @@ excerpt: >-
   Vercel recently announced a new library to generate OpenGraph (OG) images. A
   short tutorial to see how to use it to generate OG images for your Next.js
   application.
-cover: /assets/posts/create-og-images-for-your-blog-with-nextjs/cover.jpg
+cover: /assets/posts/create-og-images-for-your-blog-with-nextjs/cover.webp
 lang: en
 ---
 
 At the same time I released the new design for this blog using Next.js, [Vercel](https://vercel.com/) announced a new library to generate OpenGraph (OG) images. You know, these images you can see when posting some links on Twitter:
 
-![Example of an OG image on some of my posts](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-example.png)
+![Example of an OG image on some of my posts](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-example.webp)
 
 Since my blog posts had a cover image associated, it sounded natural to me to use this image. But I often wonder if it was worth it to generate an image with additional content such as the post title or its date. It was pretty complicated to generate an image.
 
@@ -126,7 +126,7 @@ And then, we can use these parameters to add them to the image, with some Tailwi
 
 Here is what this first version of our OG image looks like, with some parameters:
 
-![First version of our OG image](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-result-01.png)
+![First version of our OG image](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-result-01.webp)
 
 ## An image inside the image
 
@@ -161,11 +161,11 @@ const handle = (req: NextRequest) => {
 
 Note how we use the `host` and `protocol` attributes from the request’s URL, as we need to use absolute URLs for `img` elements.
 
-![Second version of our OG image](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-result-02.png)
+![Second version of our OG image](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-result-02.webp)
 
 This second version is much more satisfying 😊… until we deploy it on Vercel. After deployment, if you call try to generate an image, you might get a blank image. In the Vercel logs, you’ll see this kind of error:
 
-![The error log on Vercel](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-error.png)
+![The error log on Vercel](/assets/posts/create-og-images-for-your-blog-with-nextjs/og-error.webp)
 
 It isn’t obvious, but the issue comes from the cover image we want to include, which seems too big for `@vercel/og` at the time I’m writing this post. We could choose to use a smaller image, but it’s pretty annoying…
 

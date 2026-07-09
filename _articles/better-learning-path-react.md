@@ -4,7 +4,7 @@ date: '2023-05-26'
 excerpt: >-
   What if we took advantage of React Server Components not only to improve how
   we use React, but also how we help people learn it from the beginning?
-cover: /assets/posts/better-learning-path-react/cover.jpg
+cover: /assets/posts/better-learning-path-react/cover.webp
 ---
 
 I’ve always loved sharing my knowledge. When I love a language, library or framework, more than exploring every tiny detail of it, I think about how I can help people learn it and like it as much as I do.

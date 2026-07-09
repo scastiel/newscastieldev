@@ -7,7 +7,7 @@ excerpt: >-
   very interesting thing to do, it’s a fantastic tool, but let’s be honest, it’s
   quite hard to use. I made a lot of improvements on the codebase of this blog
   these past few days, here is a small feedback.
-cover: /assets/posts/this-blog-is-proudly-powered-by-gatsby/cover.jpg
+cover: /assets/posts/this-blog-is-proudly-powered-by-gatsby/cover.webp
 lang: en
 tags:
   - dev

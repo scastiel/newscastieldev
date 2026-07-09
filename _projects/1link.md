@@ -7,7 +7,7 @@ stack:
   - Next.js
   - React
   - TypeScript
-logo: /assets/projects/1link-logo.png
+logo: /assets/projects/1link-logo.webp
 sold: true
 ---
 

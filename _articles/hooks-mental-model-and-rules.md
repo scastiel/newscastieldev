@@ -7,7 +7,7 @@ excerpt: >-
   is very well hidden in the React core, but understanding a little how they
   work will help you to use them at their full potential, and overcome the
   issues you face more easily.
-cover: /assets/posts/hooks-mental-model-and-rules/cover.jpg
+cover: /assets/posts/hooks-mental-model-and-rules/cover.webp
 lang: en
 tags:
   - dev

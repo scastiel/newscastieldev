@@ -5,7 +5,7 @@ excerpt: >-
   Plusieurs tweets m’ont interpelé récemment, par rapport au fait que
   l’écosystème JavaScript s’est dégradé, car concentré autour de plus en plus
   d’outils pas forcément utiles. React en prend notamment pour son grade.
-cover: /assets/posts/utile-d-apprendre-react/cover.jpg
+cover: /assets/posts/utile-d-apprendre-react/cover.webp
 lang: fr
 tags:
   - life

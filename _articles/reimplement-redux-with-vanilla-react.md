@@ -5,7 +5,7 @@ excerpt: >-
   Redux is an awesome library to handle the state of big applications, React or
   not. But when you think about it, the basic features of Redux can be
   implemented in very few lines of code. Let’s see how.
-cover: /assets/posts/reimplement-redux-with-vanilla-react/cover.jpg
+cover: /assets/posts/reimplement-redux-with-vanilla-react/cover.webp
 lang: en
 tags:
   - dev

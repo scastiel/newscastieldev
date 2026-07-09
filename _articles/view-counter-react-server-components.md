@@ -5,7 +5,7 @@ excerpt: >-
   A short tutorial with a cool use case for React Server Components, Streaming
   and Suspense with Next.js: adding a view counter on a blog, calling the
   Plausible analytics API.
-cover: /assets/posts/view-counter-react-server-components/cover.png
+cover: /assets/posts/view-counter-react-server-components/cover.webp
 ---
 
 I remember the time it was so cool to have a view counter on my personal website. A perfect beginner project for web developers, just before the more complicated guest book. Now it isn’t as common as it used to be, but I wanted to add such a view counter on my blog, for each post. Here is a short tutorial in case you want to add one on yours, combining **React Server Components**, **Streaming** and **Suspense** in a **Next.js** application.
@@ -71,7 +71,7 @@ This works pretty well. The blog post is rendered by the browser, then an HTTP r
 
 This way of doing is the one I’m using on this blog for individual post. What follows in this post can only by used in pages using Server-Side Rendering, not the ones statically generated (and all my post pages are statically generated). The solution I present is used on the [Articles](/articles) page to display views count for each post.
 
-![](/assets/posts/view-counter-react-server-components/articles-screenshot.png)
+![](/assets/posts/view-counter-react-server-components/articles-screenshot.webp)
 
 </div>
 
