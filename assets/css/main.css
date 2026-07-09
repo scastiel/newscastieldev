@@ -115,6 +115,29 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
 }
 .theme-toggle:hover { border-color: var(--accent); }
 
+/* Hamburger toggle — hidden on wide screens & when JS is off (shown only in
+   the small-screen media query below, and only once JS drops the `hidden`
+   attribute). Styled to match the theme toggle. */
+.nav-toggle {
+  display: none; align-items: center; gap: 9px; cursor: pointer;
+  font-family: var(--font-head); font-size: 13px; font-weight: 600;
+  color: var(--text); background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 7px 14px;
+}
+.nav-toggle:hover { border-color: var(--accent); }
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after {
+  display: block; width: 17px; height: 2px; border-radius: 2px;
+  background: currentColor; transition: transform .2s ease, background .2s ease, top .2s ease;
+}
+.nav-toggle-bars { position: relative; }
+.nav-toggle-bars::before, .nav-toggle-bars::after { content: ""; position: absolute; left: 0; }
+.nav-toggle-bars::before { top: -6px; }
+.nav-toggle-bars::after  { top:  6px; }
+/* Morph the bars into an X when the menu is open. */
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { top: 0; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after  { top: 0; transform: rotate(-45deg); }
+
 /* ---------- Footer ---------- */
 .site-footer {
   margin-top: 40px; padding: 26px 0 48px; border-top: 1px solid var(--border);
@@ -292,7 +315,20 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   body { font-size: 17px; }
-  .site-nav { gap: 14px; font-size: 13px; }
+
+  /* Collapse the primary nav behind the hamburger — but only when JS is on
+     (`.js` is set before paint in head.html). A no-JS visitor keeps the full,
+     always-visible nav and never sees the (non-functional) toggle. */
+  .site-header { flex-wrap: wrap; }
+  .js .nav-toggle:not([hidden]) { display: inline-flex; }
+  .js .site-nav {
+    display: none; flex-basis: 100%; flex-direction: column;
+    align-items: flex-start; gap: 4px; margin-top: 4px; font-size: 15px;
+  }
+  .js .site-nav.is-open { display: flex; }
+  .js .site-nav a { padding: 6px 0; }
+  .js .site-nav .theme-toggle { margin-top: 8px; }
+
   .grid-2 { grid-template-columns: 1fr; }
   .article-row { flex-direction: column; gap: 8px; }
   .article-row .rail { flex-direction: row; width: auto; border-right: 0; border-bottom: 1px solid var(--hair); padding: 0 0 8px; gap: 10px; }
