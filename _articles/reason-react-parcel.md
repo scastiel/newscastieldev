@@ -11,8 +11,6 @@ cover: /assets/posts/reason-react-parcel/cover.webp
 redirect_from:
   - /posts/007-reason-react-parcel.html
 lang: en
-tags:
-  - dev
 ---
 
 Not that long ago I used Create-React-App a lot to quickly boostrap my React

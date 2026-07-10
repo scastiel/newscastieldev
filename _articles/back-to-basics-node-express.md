@@ -7,8 +7,6 @@ excerpt: >-
   Node.js, Express, Pug, and MongoDB. And that felt good!
 cover: /assets/posts/back-to-basics-node-express/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 Although I love React and am more used to single-page applications (SPA), I

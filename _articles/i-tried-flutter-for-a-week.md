@@ -8,8 +8,6 @@ excerpt: >-
   week I decided to learn Flutter by making a small iOS application.
 cover: /assets/posts/i-tried-flutter-for-a-week/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 It’s been some time that I hear about Flutter, the UI library by Google supposed

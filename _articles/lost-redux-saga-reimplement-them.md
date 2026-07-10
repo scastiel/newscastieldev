@@ -8,8 +8,6 @@ excerpt: >-
   you consider it a bit magic.
 cover: /assets/posts/lost-redux-saga-reimplement-them/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 You can use everyday a library such as React, Redux or Redux-Saga. You can be

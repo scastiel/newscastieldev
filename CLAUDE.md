@@ -26,6 +26,12 @@ bundle exec jekyll build      # outputs to _site/ (gitignored)
 
 - `_articles/` — blog posts. **Custom collection, not `_posts`**, so filenames are
   `<slug>.md` with **no date prefix**; the date lives in front matter. URL = `/<slug>/`.
+  Some articles are **cross-posted** from other blogs (Between the Prompts, Spliit,
+  Vasco Engineering). Those set three front-matter fields: `canonical_url` (the original
+  post URL — drives `<link rel="canonical">` + `og:url` in `head.html`), `source_name`
+  (display name), and `source_url`. `post.html` shows an "Originally published on …"
+  note and `article-list.html` shows a source badge in the card rail. Their images were
+  localised into `assets/posts/<slug>/` as WebP like any other post.
 - `_books/` — the 4 books that have their own page (`gumroadId` books). URL = `/<slug>/`.
   Their bodies were **scraped from the live site's Gumroad-rendered descriptions**.
 - `_data/books.yml` — full 6-book listing that drives `/books` (`has_page` flags which

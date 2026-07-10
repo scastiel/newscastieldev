@@ -7,8 +7,6 @@ excerpt: >-
   be used. Good news: as a developer, you do have this super power.
 cover: /assets/posts/become-a-better-developer-by-mastering-deep-work/cover.webp
 lang: en
-tags:
-  - life
 ---
 
 Have you ever dreamed to wake up one morning and realize you felt different,

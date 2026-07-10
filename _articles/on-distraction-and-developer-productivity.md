@@ -7,8 +7,6 @@ excerpt: >-
   you don’t code as much as you think you do during a day…
 cover: /assets/posts/on-distraction-and-developer-productivity/cover.webp
 lang: en
-tags:
-  - life
 ---
 
 Think about a normal day of work. You arrive at the office, take a coffee, start

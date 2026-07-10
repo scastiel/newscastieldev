@@ -9,8 +9,6 @@ cover: /assets/posts/first-post/cover.webp
 redirect_from:
   - /posts/001-first-post.html
 lang: en
-tags:
-  - dev
 ---
 
 Today I'm starting a new blog. I started a few blogs in the past. Personal

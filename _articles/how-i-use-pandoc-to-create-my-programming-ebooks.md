@@ -7,8 +7,6 @@ excerpt: >-
   ones, and it involves a fantastic tool: Pandoc.
 cover: /assets/posts/how-i-use-pandoc-to-create-my-programming-ebooks/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 In the past four years, I wrote three eBooks about programming. It’s like an addiction.

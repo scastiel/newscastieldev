@@ -7,8 +7,6 @@ excerpt: >-
   d’outils pas forcément utiles. React en prend notamment pour son grade.
 cover: /assets/posts/utile-d-apprendre-react/cover.webp
 lang: fr
-tags:
-  - life
 ---
 
 _Note du 5 nov. 2020: cet article date un peu maintenant, mais son propos me

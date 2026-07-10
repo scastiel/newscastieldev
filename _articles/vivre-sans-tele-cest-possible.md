@@ -10,8 +10,6 @@ excerpt: >-
   de télé ».
 cover: /assets/posts/vivre-sans-tele-cest-possible/cover.webp
 lang: fr
-tags:
-  - life
 ---
 
 En réponse à

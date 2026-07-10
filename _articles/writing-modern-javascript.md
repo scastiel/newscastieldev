@@ -6,8 +6,6 @@ cover: /assets/posts/writing-modern-javascript/cover.webp
 redirect_from:
   - /posts/004-writing-modern-javascript.html
 lang: en
-tags:
-  - dev
 ---
 
 Remember when JavaScript was a language used to make elements change on the page

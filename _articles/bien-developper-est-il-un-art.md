@@ -8,8 +8,6 @@ excerpt: >-
   considérant le code uniquement dans un processus industriel.
 cover: /assets/posts/bien-developper-est-il-un-art/image02.jpg
 lang: fr
-tags:
-  - dev
 ---
 
 Ces derniers temps j’ai entendu plusieurs fois que des développeurs passionnés

@@ -10,8 +10,6 @@ cover: /assets/posts/play-with-cryptography-with-openpgpjs/cover.webp
 redirect_from:
   - /posts/003-play-with-cryptography-with-openpgpjs.html
 lang: en
-tags:
-  - dev
 ---
 
 For about a year now, I use [ProtonMail](https://protonmail.com) as my mail

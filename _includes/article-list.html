@@ -4,16 +4,16 @@
       {% include article-list.html articles=site.articles %}
       {% include article-list.html articles=latest %}   (a sliced subset)
   Expected fields on each article: title, date, url, lang ("en"|"fr"),
-  tags (["dev"] / ["life"]), excerpt.
+  excerpt.
 {% endcomment %}
 <div class="article-feed">
   {% for post in include.articles %}
     {% assign lang = post.lang | default: "en" %}
-    {% assign topic = post.tags | first | default: "dev" %}
     <a class="card article-row" href="{{ post.url }}">
       <div class="rail">
         <span>{{ post.date | date: "%b %Y" }}</span>
-        <span class="meta {% if lang == 'fr' %}fr{% endif %}">{{ lang | upcase }} · {{ topic }}</span>
+        <span class="meta {% if lang == 'fr' %}fr{% endif %}">{{ lang | upcase }}</span>
+        {% if post.source_name %}<span class="source">{{ post.source_name }} ↗</span>{% endif %}
       </div>
       <div>
         <h3>{{ post.title }}</h3>

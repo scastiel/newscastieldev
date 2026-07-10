@@ -10,8 +10,6 @@ excerpt: >-
   de temps.
 cover: /assets/posts/pourquoi-un-livre-sur-react/cover.webp
 lang: fr
-tags:
-  - life
 ---
 
 Voilà quelques mois, j’étais à la recherche d’un nouveau projet personnel. Bien

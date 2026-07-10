@@ -8,8 +8,6 @@ excerpt: >-
   problems.
 cover: /assets/posts/the-case-for-side-projects/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 As a developer, you may have acquired some skills that you don’t find the time

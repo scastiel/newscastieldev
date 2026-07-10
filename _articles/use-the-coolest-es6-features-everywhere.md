@@ -9,8 +9,6 @@ cover: /assets/posts/use-the-coolest-es6-features-everywhere/cover.webp
 redirect_from:
   - /posts/002-use-the-coolest-es6-features-everywhere.html
 lang: en
-tags:
-  - dev
 ---
 
 If you use JavaScript you probably know that recently a lot of new features

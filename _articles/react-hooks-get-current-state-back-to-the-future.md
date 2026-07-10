@@ -7,8 +7,6 @@ excerpt: >-
   doesn’t do what it is supposed to.
 cover: /assets/posts/react-hooks-get-current-state-back-to-the-future/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 _This article is not recent, but still relevant! And I still often see developers having trouble with this concern. I talk about this topic and a lot more about **React hooks** in my new course [useEffect.dev](https://useeffect.dev?ref=BlogCurrentState)._
