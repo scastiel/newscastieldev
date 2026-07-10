@@ -8,8 +8,6 @@ excerpt: >-
   React.
 cover: /assets/posts/implement-ppp-fair-pricing-for-your-product/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 I released [my course about React hooks](https://useeffect.dev/?ref=PostPPP) a while ago. As with any SaaS product, I asked myself the usual question: what should be my product's price?

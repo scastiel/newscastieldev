@@ -9,8 +9,6 @@ excerpt: >-
   issues you face more easily.
 cover: /assets/posts/hooks-mental-model-and-rules/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 <aside>

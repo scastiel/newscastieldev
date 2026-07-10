@@ -9,8 +9,6 @@ excerpt: >-
   these past few days, here is a small feedback.
 cover: /assets/posts/this-blog-is-proudly-powered-by-gatsby/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 This blog has been using [Gastby](https://www.gatsbyjs.org/) for a year now.

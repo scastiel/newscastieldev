@@ -7,8 +7,6 @@ excerpt: >-
   implemented in very few lines of code. Let’s see how.
 cover: /assets/posts/reimplement-redux-with-vanilla-react/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 Redux is an awesome library to handle the state of big applications, React or

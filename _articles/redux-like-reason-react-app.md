@@ -11,8 +11,6 @@ cover: /assets/posts/redux-like-reason-react-app/cover.webp
 redirect_from:
   - /posts/005-redux-like-reason-react-app.html
 lang: en
-tags:
-  - dev
 ---
 
 In the past few weeks I've become a big fan of

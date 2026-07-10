@@ -9,8 +9,6 @@ cover: /assets/posts/reusable-hoc-with-recompose/cover.webp
 redirect_from:
   - /posts/006-reusable-hoc-with-recompose.html
 lang: en
-tags:
-  - dev
 ---
 
 Writing reusable components in React is something every React developer care

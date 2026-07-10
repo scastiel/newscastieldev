@@ -5,19 +5,22 @@ layout: default
   Article detail. Body has render_with_liquid:false, so ALL presentation
   lives here — we just wrap {{ content }} in .post-body and let the CSS
   style headings, code (Rouge), images, blockquotes, embeds, tables, etc.
-  Kicker shows language + tags as coloured pills; the meta rail from the
-  index is distilled to an inline kicker + posted date for reading comfort.
+  The header is distilled to the title + posted date for reading comfort.
 {% endcomment %}
 <main class="page-main">
   <p style="margin:24px 0 0"><a class="backlink" href="/articles">← Articles</a></p>
 
   <header class="post-header">
-    <div class="kicker">
-      {% for t in page.tags %}{% unless forloop.first %}<span class="sep">·</span>{% endunless %}<span class="{{ t }}">{{ t }}</span>{% endfor %}
-    </div>
     <h1>{{ page.title }}</h1>
     <div class="posted">Posted {{ page.date | date: "%B %-d, %Y" }}</div>
   </header>
+
+  {% if page.canonical_url %}
+    <p class="repost-note">
+      <span class="repost-note__label">↗</span>
+      I originally published this post on <a href="{{ page.canonical_url }}">{{ page.source_name }}</a>.
+    </p>
+  {% endif %}
 
   {% if page.cover %}
     <img class="post-cover" src="{{ page.cover }}" alt="{{ page.cover_alt | default: page.title }}" loading="lazy">

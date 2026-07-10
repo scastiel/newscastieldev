@@ -9,8 +9,6 @@ excerpt: >-
   create your own version.
 cover: /assets/posts/animated-3d-book-css/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 A couple of days ago, I created a 3D version for a book I was writing, with CSS only. Because I couldn’t find an easy way to do it (most websites offered to generate images only, and not with the best quality), I created a small [3D book image CSS generator](/3dbook) and posted it [on Hacker News](https://news.ycombinator.com/item?id=23896856). There was a lot of interest for it, and since it’s definitely not that complicated, here is a small tutorial to learn how to create your own version.

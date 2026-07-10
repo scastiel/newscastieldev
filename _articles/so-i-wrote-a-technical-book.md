@@ -8,8 +8,6 @@ excerpt: >-
   write a technical book.
 cover: /assets/posts/so-i-wrote-a-technical-book/cover.webp
 lang: en
-tags:
-  - life
 ---
 
 Big week for me: I finished writing my

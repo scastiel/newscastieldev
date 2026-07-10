@@ -9,8 +9,6 @@ excerpt: >-
   default.
 cover: /assets/posts/a-react-hook-for-dark-theme/cover.webp
 lang: en
-tags:
-  - dev
 ---
 
 Thanks to a recent evolution in mobile and desktop operating systems, it is more

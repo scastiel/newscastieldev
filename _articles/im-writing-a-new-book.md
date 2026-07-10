@@ -8,8 +8,6 @@ excerpt: >-
   And I decided to accept the challenge: explore them and put them into a book!
 cover: /assets/posts/im-writing-a-new-book/cover.webp
 lang: en
-tags:
-  - life
 ---
 
 When you’ve been working as a developer for several years, improving at coding

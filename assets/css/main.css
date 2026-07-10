@@ -189,6 +189,8 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 }
 .article-row .rail .meta { color: var(--accent); font-weight: 600; }
 .article-row .rail .meta.fr { color: var(--rust); }
+/* cross-posted source badge (imported articles) */
+.article-row .rail .source { color: var(--violet); font-weight: 600; letter-spacing: .01em; line-height: 1.2; }
 .article-row h3 { margin: 0 0 5px; font-size: 17px; font-weight: 600; line-height: 1.25; }
 .article-row p  { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--muted); font-family: var(--font-body); }
 
@@ -201,8 +203,6 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .pill { font-family: var(--font-mono); font-size: 10px; font-weight: 600; border-radius: 999px; padding: 2px 8px; letter-spacing: .02em; }
 .pill--en   { color: var(--accent); background: var(--accent-soft); }
 .pill--fr   { color: var(--rust);   background: var(--rust-soft); }
-.pill--dev  { color: var(--green);  background: var(--green-soft); }
-.pill--life { color: var(--violet); background: var(--violet-soft); }
 
 /* ---------- Grids for home teasers ---------- */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -278,15 +278,19 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
    layout, never in the render_with_liquid:false content files.
    ============================================================ */
 .post-header { margin: 18px auto 40px; }
-.post-header .kicker { display: flex; gap: 8px; align-items: center; font-family: var(--font-head); font-size: 12px; font-weight: 700; margin-bottom: 12px; }
-.post-header .kicker .en { color: var(--accent); }
-.post-header .kicker .fr { color: var(--rust); }
-.post-header .kicker .dev { color: var(--green); }
-.post-header .kicker .life { color: var(--violet); }
-.post-header .kicker .sep { color: var(--faint); }
 .post-header h1 { font-size: clamp(30px, 5vw, 38px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; margin: 0 0 10px; }
 .post-header .posted { font-family: var(--font-head); font-size: 13px; color: var(--faint); }
 .post-cover { border-radius: var(--radius); margin: 22px auto; width: 100%; }
+
+/* "Originally published on …" note for imported / cross-posted articles */
+.repost-note {
+  margin: 0 0 26px;
+  font-family: var(--font-head); font-size: 14px; line-height: 1.5; color: var(--muted);
+  background: var(--violet-soft); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 11px 15px;
+}
+.repost-note__label { font-weight: 700; color: var(--violet); }
+.repost-note a { color: var(--violet); font-weight: 600; text-decoration-color: var(--violet); }
 
 .post-body { font-size: 18.5px; line-height: 1.75; }
 .post-body > * { margin-inline: auto; }

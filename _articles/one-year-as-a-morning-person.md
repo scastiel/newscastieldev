@@ -10,8 +10,6 @@ excerpt: >-
   time shift.
 cover: /assets/posts/one-year-as-a-morning-person/cover.webp
 lang: en
-tags:
-  - life
 ---
 
 I’ve been living in Montréal for almost two years now. I’m currently going in
