@@ -40,8 +40,9 @@ bundle exec jekyll build      # outputs to _site/ (gitignored)
   external project URL is in the **`link`** front-matter field, NOT `url` (a collection
   doc's `.url` is its own output URL and would shadow it).
 - Pages: `index.html` (home), `articles.md`, `books.md`, `projects.md`, `me.md`,
-  `talks.md`, `contact.md`, plus "under construction" stubs `github-card.md`,
-  `3dbook.md`, `github-stars.md`.
+  `talks.md`, `contact.md`, `3dbook.html` (interactive 3D-book CSS generator,
+  vanilla-JS port of the old React tool), plus "under construction" stubs
+  `github-card.md`, `github-stars.md`.
 - `_layouts/` (default, post, book, page) + `_includes/` (head, header, footer,
   article-list, book-list, project-list).
 
