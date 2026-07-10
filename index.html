@@ -5,7 +5,6 @@ description: Sebastien Castiel · Developer, writer, indie hacker · 📍 Montre
 ---
 {%- assign articles = site.articles | sort: 'date' | reverse -%}
 {%- assign projects = site.projects | sort: 'started' | reverse -%}
-{%- assign books = site.data.books -%}
 
 <p class="intro">
   French developer expatriated in Montreal, I always have several
@@ -28,21 +27,14 @@ description: Sebastien Castiel · Developer, writer, indie hacker · 📍 Montre
 
 <div class="section-head">
   <p class="eyebrow">Latest articles</p>
-  <a class="see-all" href="/articles">See all →</a>
 </div>
 {% assign latest_articles = articles | slice: 0, 4 %}
 {% include article-list.html articles=latest_articles %}
-
-<div class="section-head">
-  <p class="eyebrow">Latest books</p>
-  <a class="see-all" href="/books">See all →</a>
-</div>
-{% assign latest_books = books | slice: 0, 4 %}
-{% include book-list.html books=latest_books %}
+<p class="see-more"><a class="see-all" href="/articles">See all →</a></p>
 
 <div class="section-head">
   <p class="eyebrow">Current projects</p>
-  <a class="see-all" href="/projects">See all →</a>
 </div>
 {% assign latest_projects = projects | slice: 0, 4 %}
 {% include project-list.html projects=latest_projects %}
+<p class="see-more"><a class="see-all" href="/projects">See all →</a></p>

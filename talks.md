@@ -4,8 +4,10 @@ title: Talks
 permalink: /talks/
 description: "I give talks in meetups and conferences about what I know the best: frontend development."
 ---
-<img class="post-cover" src="/assets/jug.webp" alt="Sebastien giving a talk" loading="lazy">
-<p class="prose" style="text-align:center"><small>Photo by <a href="https://twitter.com/nicoespeon">Nicolas Carlo</a></small></p>
+<figure class="talk-photo">
+  <img class="post-cover" src="/assets/jug.webp" alt="Sebastien giving a talk" loading="lazy">
+  <figcaption>Photo by <a href="https://twitter.com/nicoespeon">Nicolas Carlo</a></figcaption>
+</figure>
 
 ## Upcoming talks
 
