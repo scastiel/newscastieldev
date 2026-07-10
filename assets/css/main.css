@@ -72,6 +72,9 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
@@ -80,6 +83,14 @@ body {
   transition: background .25s ease, color .25s ease;
   -webkit-font-smoothing: antialiased;
 }
+/* Keep the footer pinned to the bottom of the viewport on short pages. */
+body > .wrap:last-child { margin-top: auto; }
+/* The direct children of the flex-column body (header/footer `.wrap`s and the
+   `.page-main` content) have `margin-inline: auto`, which overrides
+   `align-items: stretch` and collapses them to content width — force them to
+   span the full page width so content lines up with the header and footer. */
+body > .wrap,
+body > .page-main { width: 100%; box-sizing: border-box; }
 img { max-width: 100%; height: auto; display: block; }
 ::selection { background: var(--accent-soft); }
 a { color: var(--accent); text-decoration: none; }
@@ -94,10 +105,10 @@ a:hover { text-decoration: underline; }
 h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing: -.01em; line-height: 1.15; }
 
 /* ---------- Layout wrappers ---------- */
-.wrap  { max-width: var(--page); margin-inline: auto; padding-inline: 28px; }
+.wrap  { max-width: var(--page); margin-inline: auto; padding-inline: 20px; }
 .prose { max-width: var(--measure); margin-inline: auto; }
 /* index / home / text pages: a touch wider than reading measure */
-.page-main { max-width: 50rem; margin-inline: auto; padding-inline: 28px; padding-bottom: 8px; }
+.page-main { max-width: 50rem; margin-inline: auto; padding-inline: 20px; padding-bottom: 8px; }
 .eyebrow { font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
 .backlink { font-family: var(--font-head); font-size: 12px; font-weight: 600; color: var(--accent); }
 
@@ -148,7 +159,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
 
 /* ---------- Footer ---------- */
 .site-footer {
-  margin-top: 40px; padding: 26px 0 48px; border-top: 1px solid var(--border);
+  margin-top: 40px; padding: 26px 0; border-top: 1px solid var(--border);
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
   font-family: var(--font-head); font-size: 13px; color: var(--faint);
 }
@@ -349,12 +360,12 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
 .post-body td { padding: 8px 10px; border-bottom: 1px solid var(--hair); color: var(--muted); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 640px) {
-  body { font-size: 17px; }
-
-  /* Collapse the primary nav behind the hamburger — but only when JS is on
-     (`.js` is set before paint in head.html). A no-JS visitor keeps the full,
-     always-visible nav and never sees the (non-functional) toggle. */
+/* Collapse the primary nav behind the hamburger earlier than the rest of the
+   responsive layout — the brand + full nav crowd each other well before 640px.
+   Only when JS is on (`.js` is set before paint in head.html); a no-JS visitor
+   keeps the full, always-visible nav and never sees the (non-functional)
+   toggle. */
+@media (max-width: 820px) {
   .site-header { flex-wrap: wrap; }
   .js .nav-toggle:not([hidden]) { display: inline-flex; }
   .js .site-nav {
@@ -364,6 +375,10 @@ a.article-row { display: flex; gap: 18px; padding: 16px; margin-bottom: 10px; }
   .js .site-nav.is-open { display: flex; }
   .js .site-nav a { padding: 6px 0; }
   .js .site-nav .theme-toggle { margin-top: 8px; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
 
   .grid-2 { grid-template-columns: 1fr; }
   .article-row { flex-direction: column; gap: 8px; }
