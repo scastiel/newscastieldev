@@ -101,6 +101,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border);
 }
+.site-brand { display: inline-flex; align-items: center; gap: 10px; }
+.site-brand:hover { text-decoration: none; }
+.site-logo { display: block; width: 30px; height: 30px; border-radius: 8px; }
 .site-title { font-family: var(--font-head); font-weight: 800; font-size: 19px; letter-spacing: -.02em; color: var(--text); }
 .site-title span { color: var(--accent); }
 .site-nav { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; font-family: var(--font-head); font-weight: 500; font-size: 14px; }
@@ -147,6 +150,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; letter-spacing
 .site-footer a { color: var(--faint); }
 .site-footer a:hover { color: var(--accent); text-decoration: none; }
 .site-footer .social { display: flex; gap: 18px; }
+.footer-left { display: flex; align-items: center; gap: 18px; }
+.footer-brand { display: inline-flex; }
+.footer-logo { display: block; width: 26px; height: 26px; border-radius: 7px; }
 
 /* ---------- Home intro & announcement ---------- */
 .intro { max-width: 39rem; font-size: 22px; line-height: 1.6; margin: 44px 0 0; }
