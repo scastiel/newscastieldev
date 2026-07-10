@@ -1,0 +1,364 @@
+---
+layout: page
+title: 3D Book Image CSS Generator
+permalink: /3dbook/
+description: Generate an animated 3D image from a book cover and export to HTML/CSS to embed on your website.
+hide_title: true
+---
+{% comment %}
+  Port of the old site's React "3D Book" generator (src/app/3dbook/ in the
+  Next.js repo) to plain HTML + vanilla JS. The visible <style> element in
+  the CSS output doubles as the live stylesheet for the preview book — the
+  same trick the original used. Demo values (shown in the preview when a
+  field is empty) are read back from the initial preview markup, so the
+  baseurl plugin can rewrite the demo image src at build time.
+{% endcomment %}
+<p style="margin:44px 0 22px"><a class="backlink" href="/projects">← Projects</a></p>
+<h1 class="page-title" style="margin-top:0">{{ page.title }}</h1>
+
+<p>Here is a generator you can use to create a 3D Book Cover! Set the
+parameters for your book, and copy-paste the HTML and CSS code on your
+website.</p>
+
+<p>If you want to know how it works, have a look at the
+<a href="/animated-3d-book-css">blog post</a> I wrote 😊.</p>
+
+<style>
+  /* Structural styles for the interactive tool only. The preview book itself
+     is styled by the CSS the tool generates (a visible <style> element that
+     doubles as the output box — .bookgen-code). */
+  .bookgen { font-family: var(--font-head); font-size: 14px; margin: 16px 0 36px; display: flex; flex-direction: column; gap: 24px; }
+  .bookgen-main { display: flex; gap: 28px; align-items: flex-start; }
+  .bookgen-form { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+  .bookgen-form label { display: flex; gap: 10px; align-items: center; }
+  .bookgen-form label > span:first-child { min-width: 8rem; }
+  .bookgen-form .inputs { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; }
+  .bookgen-form input { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--border); border-radius: 5px; padding: 4px 8px; min-width: 0; }
+  .bookgen-form input[type=text] { flex: 1; }
+  .bookgen-form input[type=range] { flex: 1; padding: 0; border: 0; background: none; accent-color: var(--accent); }
+  .bookgen-form input[type=number] { width: 4.5rem; text-align: right; }
+  .bookgen-form input[type=color] { padding: 2px; width: 2.4rem; height: 2rem; cursor: pointer; }
+  .bookgen-form .unit { width: 2rem; color: var(--faint); }
+  .bookgen-reset { margin-top: 14px; align-self: center; cursor: pointer; }
+  .bookgen-preview { flex: 0.75; align-self: center; margin: 48px 0; min-height: 300px; }
+  .bookgen-output h2 { font-size: 18px; margin: 0 0 8px; }
+  .bookgen-code { display: block; max-height: 10rem; overflow: auto; white-space: pre; font-family: var(--font-mono); font-size: 12px; line-height: 1.6; background: var(--code-bg); color: #d7dae0; border-radius: var(--radius); padding: 12px 14px; margin: 0 0 18px; }
+
+  @media (max-width: 640px) {
+    .bookgen-main { flex-direction: column; align-items: stretch; }
+    .bookgen-preview { margin: 36px 0; }
+    .bookgen-form label { flex-direction: column; align-items: stretch; gap: 4px; }
+  }
+</style>
+
+<div class="bookgen" id="bookgen">
+  <div class="bookgen-main">
+    <div class="bookgen-form">
+      <label>
+        <span>Image URL:</span>
+        <span class="inputs">
+          <input type="text" data-key="imageUrl" placeholder="Absolute URL of your cover image">
+        </span>
+      </label>
+      <label>
+        <span>Image Alt:</span>
+        <span class="inputs">
+          <input type="text" data-key="imageAlt" placeholder="Your book name &amp; your name">
+        </span>
+      </label>
+      <label>
+        <span>Image link:</span>
+        <span class="inputs">
+          <input type="text" data-key="href" placeholder="URL of your book’s webpage">
+        </span>
+      </label>
+      <label>
+        <span>Color:</span>
+        <span class="inputs">
+          <input type="text" data-key="bgColor">
+          <input type="color" data-key="bgColor">
+        </span>
+      </label>
+      <label>
+        <span>Rotate:</span>
+        <span class="inputs">
+          <input type="range" data-key="rotate" min="0" max="45" step="1">
+          <input type="number" data-key="rotate" min="0" max="45" step="1">
+          <span class="unit">deg</span>
+        </span>
+      </label>
+      <label>
+        <span>Rotate (hover):</span>
+        <span class="inputs">
+          <input type="range" data-key="rotateHover" min="0" max="45" step="1">
+          <input type="number" data-key="rotateHover" min="0" max="45" step="1">
+          <span class="unit">deg</span>
+        </span>
+      </label>
+      <label>
+        <span>Perspective:</span>
+        <span class="inputs">
+          <input type="range" data-key="perspective" min="300" max="1300" step="100">
+          <input type="number" data-key="perspective" min="300" max="1300" step="100">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <label>
+        <span>Anim. duration:</span>
+        <span class="inputs">
+          <input type="range" data-key="transitionDuration" min="0" max="5" step="0.5">
+          <input type="number" data-key="transitionDuration" min="0" max="5" step="0.5">
+          <span class="unit">s</span>
+        </span>
+      </label>
+      <label>
+        <span>Radius:</span>
+        <span class="inputs">
+          <input type="range" data-key="radius" min="0" max="5" step="1">
+          <input type="number" data-key="radius" min="0" max="5" step="1">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <label>
+        <span>Thickness:</span>
+        <span class="inputs">
+          <input type="range" data-key="thickness" min="5" max="100" step="5">
+          <input type="number" data-key="thickness" min="5" max="100" step="5">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <label>
+        <span>Width:</span>
+        <span class="inputs">
+          <input type="range" data-key="width" min="50" max="300" step="25">
+          <input type="number" data-key="width" min="50" max="300" step="25">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <label>
+        <span>Height:</span>
+        <span class="inputs">
+          <input type="range" data-key="height" min="75" max="450" step="25">
+          <input type="number" data-key="height" min="75" max="450" step="25">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <label>
+        <span>Pages offset:</span>
+        <span class="inputs">
+          <input type="range" data-key="pagesOffset" min="0" max="10" step="1">
+          <input type="number" data-key="pagesOffset" min="0" max="10" step="1">
+          <span class="unit">px</span>
+        </span>
+      </label>
+      <button type="button" class="btn btn--primary bookgen-reset" id="bookgen-reset">Reset with defaults</button>
+    </div>
+    <a
+      class="book-container bookgen-preview"
+      id="bookgen-preview-link"
+      href="https://scastiel.dev/pull-requests-code-review"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="book">
+        <img
+          id="bookgen-preview-img"
+          alt="Pull Requests and Code Review: Strategies, Techniques, and Best Practices for Collaboration, by Sebastien Castiel"
+          src="/assets/book-covers/pull-requests-code-review.webp"
+        >
+      </div>
+    </a>
+  </div>
+  <div class="bookgen-output">
+    <h2>CSS</h2>
+    <style id="bookgen-out-css" class="bookgen-code"></style>
+    <h2>HTML</h2>
+    <pre id="bookgen-out-html" class="bookgen-code"></pre>
+  </div>
+</div>
+
+<script>
+(function () {
+  var defaults = {
+    imageUrl: '',
+    imageAlt: '',
+    href: '',
+    bgColor: '#01060f',
+    rotate: 30,
+    rotateHover: 0,
+    perspective: 600,
+    transitionDuration: 1,
+    radius: 2,
+    thickness: 30,
+    width: 200,
+    height: 300,
+    pagesOffset: 1,
+  }
+  var numericKeys = ['rotate', 'rotateHover', 'perspective', 'transitionDuration',
+    'radius', 'thickness', 'width', 'height', 'pagesOffset']
+
+  var root = document.getElementById('bookgen')
+  var previewLink = document.getElementById('bookgen-preview-link')
+  var previewImg = document.getElementById('bookgen-preview-img')
+  var outCss = document.getElementById('bookgen-out-css')
+  var outHtml = document.getElementById('bookgen-out-html')
+
+  // Demo values shown in the preview when the corresponding field is empty.
+  // Read from the initial markup so the image URL is baseurl-aware.
+  var demo = {
+    imageUrl: previewImg.getAttribute('src'),
+    imageAlt: previewImg.getAttribute('alt'),
+    href: previewLink.getAttribute('href'),
+  }
+
+  var inputs = root.querySelectorAll('input[data-key]')
+
+  function values() {
+    var v = {}
+    inputs.forEach(function (input) {
+      var key = input.dataset.key
+      if (!(key in v)) v[key] = numericKeys.indexOf(key) >= 0 ? Number(input.value) : input.value
+    })
+    return v
+  }
+
+  function cssTemplate(v) {
+    return '.book-container {\n' +
+      '  display: flex;\n' +
+      '  align-items: center;\n' +
+      '  justify-content: center;\n' +
+      '  perspective: ' + v.perspective + 'px;\n' +
+      '}\n' +
+      '\n' +
+      '@keyframes initAnimation {\n' +
+      '  0% {\n' +
+      '    transform: rotateY(' + -v.rotateHover + 'deg);\n' +
+      '  }\n' +
+      '  100% {\n' +
+      '    transform: rotateY(' + -v.rotate + 'deg);\n' +
+      '  }\n' +
+      '}\n' +
+      '\n' +
+      '.book {\n' +
+      '  width: ' + v.width + 'px;\n' +
+      '  height: ' + v.height + 'px;\n' +
+      '  position: relative;\n' +
+      '  transform-style: preserve-3d;\n' +
+      '  transform: rotateY(' + -v.rotate + 'deg);\n' +
+      '  transition: ' + v.transitionDuration + 's ease;\n' +
+      '  animation: 1s ease 0s 1 initAnimation;\n' +
+      '}\n' +
+      '\n' +
+      '.book-container:hover .book, \n' +
+      '.book-container:focus .book {\n' +
+      '  transform: rotateY(' + -v.rotateHover + 'deg);\n' +
+      '}\n' +
+      '\n' +
+      '.book > :first-child {\n' +
+      '  position: absolute;\n' +
+      '  top: 0;\n' +
+      '  left: 0;\n' +
+      '  background-color: red;\n' +
+      '  width: ' + v.width + 'px;\n' +
+      '  height: ' + v.height + 'px;\n' +
+      '  transform: translateZ(' + v.thickness / 2 + 'px);\n' +
+      '  background-color: ' + v.bgColor + ';\n' +
+      '  border-radius: 0 ' + v.radius + 'px ' + v.radius + 'px 0;\n' +
+      '  box-shadow: 5px 5px 20px #666;\n' +
+      '}\n' +
+      '\n' +
+      '.book::before {\n' +
+      '  position: absolute;\n' +
+      '  content: \' \';\n' +
+      '  background-color: blue;\n' +
+      '  left: 0;\n' +
+      '  top: ' + v.pagesOffset + 'px;\n' +
+      '  width: ' + (v.thickness - 2) + 'px;\n' +
+      '  height: ' + (v.height - 2 * v.pagesOffset) + 'px;\n' +
+      '  transform: translateX(' + (v.width - v.thickness / 2 - v.pagesOffset) + 'px) rotateY(90deg);\n' +
+      '  background: linear-gradient(90deg, \n' +
+      '    #fff 0%,\n' +
+      '    #f9f9f9 5%,\n' +
+      '    #fff 10%,\n' +
+      '    #f9f9f9 15%,\n' +
+      '    #fff 20%,\n' +
+      '    #f9f9f9 25%,\n' +
+      '    #fff 30%,\n' +
+      '    #f9f9f9 35%,\n' +
+      '    #fff 40%,\n' +
+      '    #f9f9f9 45%,\n' +
+      '    #fff 50%,\n' +
+      '    #f9f9f9 55%,\n' +
+      '    #fff 60%,\n' +
+      '    #f9f9f9 65%,\n' +
+      '    #fff 70%,\n' +
+      '    #f9f9f9 75%,\n' +
+      '    #fff 80%,\n' +
+      '    #f9f9f9 85%,\n' +
+      '    #fff 90%,\n' +
+      '    #f9f9f9 95%,\n' +
+      '    #fff 100%\n' +
+      '    );\n' +
+      '}\n' +
+      '\n' +
+      '.book::after {\n' +
+      '  position: absolute;\n' +
+      '  top: 0;\n' +
+      '  left: 0;\n' +
+      '  content: \' \';\n' +
+      '  width: ' + v.width + 'px;\n' +
+      '  height: ' + v.height + 'px;\n' +
+      '  transform: translateZ(' + -v.thickness / 2 + 'px);\n' +
+      '  background-color: ' + v.bgColor + ';\n' +
+      '  border-radius: 0 ' + v.radius + 'px ' + v.radius + 'px 0;\n' +
+      '  box-shadow: -10px 0 50px 10px #666;\n' +
+      '}'
+  }
+
+  function htmlTemplate(v) {
+    return '<a \n' +
+      '  class="book-container"\n' +
+      '  href="' + v.href + '"\n' +
+      '  target="_blank"\n' +
+      '  rel="noreferrer noopener"\n' +
+      '>\n' +
+      '  <div class="book">\n' +
+      '    <img\n' +
+      '      alt="' + v.imageAlt + '"\n' +
+      '      src="' + v.imageUrl + '"\n' +
+      '      />\n' +
+      '  </div>\n' +
+      '</a>'
+  }
+
+  function update() {
+    var v = values()
+    previewImg.src = v.imageUrl || demo.imageUrl
+    previewImg.alt = v.imageAlt || demo.imageAlt
+    previewLink.href = v.href || demo.href
+    outCss.textContent = cssTemplate(v)
+    outHtml.textContent = htmlTemplate(v)
+  }
+
+  inputs.forEach(function (input) {
+    input.addEventListener('input', function () {
+      // keep twin controls (range+number, text+color picker) in sync
+      inputs.forEach(function (other) {
+        if (other !== input && other.dataset.key === input.dataset.key) other.value = input.value
+      })
+      update()
+    })
+  })
+
+  function reset() {
+    inputs.forEach(function (input) {
+      input.value = defaults[input.dataset.key]
+    })
+    update()
+  }
+
+  document.getElementById('bookgen-reset').addEventListener('click', reset)
+
+  reset()
+})()
+</script>
