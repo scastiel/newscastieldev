@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Announcing Receipt Scanning Using AI"
 date: '2024-01-31'
 excerpt: >-

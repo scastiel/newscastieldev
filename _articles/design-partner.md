@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Turning Claude Code Into My Best Design Partner"
 date: '2025-08-18'
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Building a Modular AI Copilot: From Monolithic to Dynamic Context"
 date: '2025-10-30'
 excerpt: >-

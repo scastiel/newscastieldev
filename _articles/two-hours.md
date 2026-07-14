@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Two Hours with Cursor Changed My Mind About AI Coding"
 date: '2025-08-10'
 excerpt: >-

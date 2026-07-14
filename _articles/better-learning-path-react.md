@@ -17,7 +17,7 @@ With the recently-introduced [React Server Components](https://nextjs.org/docs/g
 
 <aside>
 
-PS: I am now offering a workshop called [Learn React the Modern Way](/react-workshop) teaching React the way I propose here. If you prefer, there is also an [online course](https://learn.scastiel.dev) 😉.
+PS: I am now offering a workshop called [Learn React the Modern Way](/react-workshop/) teaching React the way I propose here. If you prefer, there is also an [online course](https://learn.scastiel.dev) 😉.
 
 </aside>
 
@@ -64,7 +64,7 @@ I understand this path I’m proposing can seem counter-intuitive. And to be hon
 
 [![@shadcn: “An interesting side effect of RSC is that React is now actually easier to teach/learn. If you’ve used React for a while, yes it requires a mental model switch. But for beginners, it makes so much sense: fetch data, render and style it - all in one place. If you need to do something in the browser, "use client". This is what made PHP so great as a first language and I think React is going to be just as easy.”](/assets/posts/better-learning-path-react/tweet_.webp)](https://twitter.com/shadcn/status/1660338653305114625)
 
-I just finished designing a workshop called [Learn React the Modern Way](/react-workshop) to help beginners learn React and Next.js, and will experiment this new path. I strongly believe it will make the learning journey way easier for people who know HTML, CSS and JavaScript.
+I just finished designing a workshop called [Learn React the Modern Way](/react-workshop/) to help beginners learn React and Next.js, and will experiment this new path. I strongly believe it will make the learning journey way easier for people who know HTML, CSS and JavaScript.
 
 Can’t wait to keep you posted about how it goes 😊
 

@@ -10,7 +10,7 @@ cover: /assets/posts/what-to-know-react-first-job/cover.webp
 
 A recurring question I hear from people learning React: “how do I know if I’m ready to apply to junior React developer jobs?”. Very often, they’re ready before they know.
 
-If you’ve built a couple of applications using React (your portfolio, a side project…), I bet you’re ready! (If you haven’t, what not checking out [my online course](https://learn.scastiel.dev) or [my React workshop](/react-workshop)? 😇)
+If you’ve built a couple of applications using React (your portfolio, a side project…), I bet you’re ready! (If you haven’t, what not checking out [my online course](https://learn.scastiel.dev) or [my React workshop](/react-workshop/)? 😇)
 
 In this article, I listed some things you don’t have to know, and some you do. My goal is to prepare you to your first technical interview.
 
@@ -102,6 +102,6 @@ Hopefully you feel more prepared now; or at least you know what to prepare next 
 
 <aside>
 
-If you need any help to get ready for your first (or next) job interview, have a look at the [mentoring services](/mentoring) I’m offering! I can help by answering questions, reviewing your portfolio, and even make you pass a mock interview 😉.
+If you need any help to get ready for your first (or next) job interview, have a look at the [mentoring services](/mentoring/) I’m offering! I can help by answering questions, reviewing your portfolio, and even make you pass a mock interview 😉.
 
 </aside>
