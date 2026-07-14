@@ -7,9 +7,9 @@ stack:
   - Next.js
   - React
   - TypeScript
-  - MCP
+logo: /assets/projects/collecte-mtl-logo.png
 ---
 
-[**Collecte MTL**](https://collectemtl.ca) helps Montreal residents find their garbage, recycling, food-scrap, and bulky-waste collection schedules by address, or by browsing any of the island’s 32 neighborhoods and 19 boroughs. It’s built on top of the City of Montreal’s official “Secteurs Info-collectes” open dataset, refreshed roughly monthly, and also exposes an [MCP server](https://collectemtl.ca) so assistants can look up collection days directly.
+[**Collecte MTL**](https://collectemtl.ca) helps Montreal residents find their garbage, recycling, food-scrap, and bulky-waste collection schedules by address, or by browsing any of the island’s 32 neighborhoods and 19 boroughs. It’s built on top of the City of Montreal’s official “Secteurs Info-collectes” open dataset, refreshed roughly monthly.
 
 _Not affiliated with the City of Montreal._
