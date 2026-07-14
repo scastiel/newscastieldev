@@ -2,12 +2,11 @@ title: Sebastien Castiel
 description: Developer, writer, indie hacker · 📍 Montreal, QC
 author: Sebastien Castiel
 email: sebastien@castiel.me
-# Served from a GitHub project page for now: https://scastiel.github.io/newscastieldev/
-# Content/templates use root-absolute URLs (portable); _plugins/prepend_baseurl.rb
-# injects `baseurl` into the final HTML at build time. To move to a root domain later,
-# set url to the domain and baseurl to "" — nothing else needs to change.
-url: "https://scastiel.github.io"
-baseurl: "/newscastieldev"
+# Served from the custom domain scastiel.dev (see CNAME). Content/templates use
+# root-absolute URLs (portable); _plugins/prepend_baseurl.rb is a no-op while
+# baseurl is "". To move back to a GitHub project page, set url/baseurl accordingly.
+url: "https://scastiel.dev"
+baseurl: ""
 lang: en
 
 # Social links (from the old Footer.tsx)
