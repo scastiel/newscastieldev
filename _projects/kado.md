@@ -7,6 +7,7 @@ stack:
   - SwiftUI
   - SwiftData
   - CloudKit
+logo: /assets/projects/kado-logo.svg
 ---
 
 [**Kadō**](https://getkado.app) is a free, open-source habit tracker for iOS that prioritizes privacy. It uses an exponential moving average scoring system instead of traditional streaks, so missing a day doesn't reset your progress to zero.
