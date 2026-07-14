@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "If Claude Writes the Code, What Makes Me Still a Developer?"
 date: '2026-04-30'
 excerpt: >-

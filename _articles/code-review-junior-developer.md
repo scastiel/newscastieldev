@@ -24,7 +24,7 @@ This article became a part of my book [Pull Requests and Code Review](/pull-requ
 
 <!-- <aside>
 
-Do you need guidance in your journey as a junior developer? I can help you learn skills, be more confident, and reach your dream job! [Check out my mentoring services](/mentoring) 😉
+Do you need guidance in your journey as a junior developer? I can help you learn skills, be more confident, and reach your dream job! [Check out my mentoring services](/mentoring/) 😉
 
 </aside> -->
 

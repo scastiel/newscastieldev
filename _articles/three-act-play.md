@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "AI-Assisted Development: A Three-Act Play"
 date: '2025-08-24'
 excerpt: >-

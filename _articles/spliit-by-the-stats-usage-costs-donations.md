@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Spliit by the Stats: Usage, Costs, Donations"
 date: '2024-10-14'
 excerpt: >-

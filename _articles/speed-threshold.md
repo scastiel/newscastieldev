@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Watching, Not Waiting: When AI Coding Crossed the Speed Threshold"
 date: '2025-12-03'
 excerpt: >-

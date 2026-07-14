@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "We Need an Open Source Alternative to Splitwise"
 date: '2024-02-04'
 excerpt: >-

@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Designing AI‑Ready Systems: Making Code Easy for Assistants"
 date: '2025-11-02'
 excerpt: >-

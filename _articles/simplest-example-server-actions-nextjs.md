@@ -53,7 +53,7 @@ In our example, the server action is the function `getInformationFromTheServer`,
 
 <aside>
 
-💡 Tiny interruption in this post: if you’d like to learn how to use React and Next.js to create powerful applications, check out my [online course](https://learn.scastiel.dev) or my [live workshop](/react-workshop) 😉.
+💡 Tiny interruption in this post: if you’d like to learn how to use React and Next.js to create powerful applications, check out my [online course](https://learn.scastiel.dev) or my [live workshop](/react-workshop/) 😉.
 
 </aside>
 

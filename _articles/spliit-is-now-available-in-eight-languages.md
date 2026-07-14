@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Spliit Is Now Available in Eight Languages"
 date: '2024-10-05'
 excerpt: >-
