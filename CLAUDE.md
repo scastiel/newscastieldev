@@ -2,8 +2,8 @@
 
 Context for working on **scastiel.dev** — a minimal, static **Jekyll** site. It was
 migrated from a Next.js site (`~/dev/scastiel.dev`, the source of truth for original
-content). The site is intentionally **unstyled** (plain semantic HTML, no CSS) — design
-is a later, separate pass. Don't add styling unless asked.
+content). It is served from the custom domain **https://scastiel.dev** and is now
+fully designed (see Design below) — the early "intentionally unstyled" phase is over.
 
 ## Git workflow
 
@@ -21,6 +21,9 @@ bundle install
 bundle exec jekyll serve      # local dev at http://127.0.0.1:4000
 bundle exec jekyll build      # outputs to _site/ (gitignored)
 ```
+
+`baseurl` is `""`, so local dev is at the root (`http://127.0.0.1:4000/`), matching
+production. Add `--port N` if 4000 is already taken by another checkout/worktree.
 
 ## Content model
 
@@ -44,7 +47,7 @@ bundle exec jekyll build      # outputs to _site/ (gitignored)
   vanilla-JS port of the old React tool), plus "under construction" stubs
   `github-card.md`, `github-stars.md`.
 - `_layouts/` (default, post, book, page) + `_includes/` (head, header, footer,
-  article-list, book-list, project-list).
+  article-list, book-list, project-list, talk-list).
 
 ## URLs & redirects
 
@@ -54,6 +57,29 @@ bundle exec jekyll build      # outputs to _site/ (gitignored)
 - Old URLs are static redirect stubs via **jekyll-redirect-from** (`redirect_from:` in
   front matter): `/about-me`→`/me`, `/books/<slug>`→`/<slug>`, `/posts`→`/articles`,
   and legacy dated `/posts/00N-*.html` post URLs.
+
+## Design
+
+One hand-written stylesheet: **`assets/css/main.css`** (no framework, no build step,
+no Sass). Everything hangs off design tokens in `:root` — fonts, `--measure` (reading
+width), colours. Prefer reusing a token over a literal value.
+
+- **Theming.** Light by default; dark tokens apply via `@media (prefers-color-scheme:
+  dark)` *and* an explicit `[data-theme]` toggle in the header. Rules are written so
+  either path wins correctly — when adding colours, add both variants rather than
+  hard-coding a hex. A small inline script in `head.html` applies the stored theme
+  before paint and sets a `.js` class on `<html>`; the theme toggle and the mobile nav
+  hamburger live in `footer.html`. That plus Plausible is all the JS on the site, and
+  it degrades gracefully — with JS off, dark mode still follows system preference and
+  the nav stays expanded instead of collapsing behind the hamburger.
+- **Fonts.** Source Serif 4 (body), Hanken Grotesk (`--font-head`, UI/headings),
+  JetBrains Mono (code) — from Google Fonts, loaded async with a `<noscript>` fallback.
+- **Article content** is styled under the **`.post-body`** wrapper, so content files
+  stay plain markdown and carry no classes of their own. Keep it that way: put the CSS
+  in `main.css`, not in the article.
+  - Exception: kramdown IALs are fine for genuinely presentational bits. The timeline
+    cross-posts tag their date kickers with `{: .eyebrow}` on the line after the text,
+    which reuses the site-wide `.eyebrow` treatment and binds it to the heading below.
 
 ## Assets
 
@@ -68,13 +94,12 @@ GitHub Pages via **GitHub Actions** (`.github/workflows/pages.yml`), NOT the cla
 branch build — the site needs Jekyll 4 (`render_with_liquid`, `jekyll-feed` collections)
 which the pinned `github-pages` gem (Jekyll 3.x) can't build.
 
-Currently served from a **project page**: `https://scastiel.github.io/newscastieldev/`,
-so `baseurl: /newscastieldev` in `_config.yml`. Content/templates stay root-absolute
-(portable); **`_plugins/prepend_baseurl.rb`** injects the baseurl into href/src of the
-final HTML at build time (jekyll-feed/sitemap/redirect-from already handle baseurl
-themselves). Local `jekyll serve` therefore runs at `http://127.0.0.1:4000/newscastieldev/`.
-To move to a root domain later: set `url` to the domain, `baseurl` to `""`, add a
-`CNAME` — nothing else changes (the plugin becomes a no-op).
+Served from the **custom domain** `https://scastiel.dev` (root `CNAME` file), so
+`url: "https://scastiel.dev"` and `baseurl: ""` in `_config.yml`. It previously ran as
+a project page at `scastiel.github.io/newscastieldev/`; **`_plugins/prepend_baseurl.rb`**
+is the leftover from that setup — with an empty baseurl it's a **no-op**, kept only so
+the site could move back under a path without touching content. Content and templates
+are root-absolute (`/assets/...`), which is what makes either mode work.
 
 ## migrate.mjs (one-time script — handle with care)
 
@@ -87,8 +112,6 @@ old repo). It needs `npm install` (gray-matter). Node ≥ 18.
 
 - RSS (`/feed/rss.xml`) and JSON (`/feed/feed.json`) feed variants (only Atom at
   `/feed/feed.xml` exists).
-- Custom domain / CNAME.
-- Design/styling.
 
 ## Image optimization (done)
 
