@@ -1,7 +1,7 @@
 ---
 sitemap: false
 title: "Four Agent Frameworks in Sixteen Months"
-date: '2026-07-07'
+date: '2026-07-24'
 excerpt: >-
   How Gama went from LangChain to LangGraph to Google ADK to Mastra to the Claude
   Agent SDK — and what we'd tell our December 2024 selves.
