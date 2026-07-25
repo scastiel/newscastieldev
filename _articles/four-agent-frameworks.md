@@ -34,6 +34,7 @@ That sounds like a failure. We want to argue it isn't — and that the real mist
 - **0 disruption** — agents kept running behind a feature flag
 
 *December 2024*
+{: .eyebrow}
 
 ## Babysitting the LLM
 
@@ -48,6 +49,7 @@ The second was structured output. LLMs at the time were bad at returning data in
 Every prompt change risked breaking the parsing logic, and every parsing change constrained the prompt. That's the context in which [LangChain](https://www.langchain.com/langchain) looked like salvation: a mature framework (by the standards of the time) that promised to absorb the babysitting. We wrote an ADR, chose LangChain over [Vercel's AI SDK](https://sdk.vercel.ai) (too young) and [CrewAI](https://www.crewai.com) (Python-only, and we were a TypeScript shop), and committed. We even decided *not* to build an abstraction layer on top of it. Going all in felt efficient.
 
 *2025*
+{: .eyebrow}
 
 ## The hiring decision that became an architecture decision
 
@@ -60,6 +62,7 @@ Meanwhile, the AI developer we'd hired was genuinely good with AI but didn't hav
 We also created a split that a later migration would exist purely to undo: two stacks, one monorepo full of shared TypeScript libraries our AI service couldn't touch.
 
 *October 2025*
+{: .eyebrow}
 
 ## Google ADK, or "It Worked Locally"
 
@@ -76,6 +79,7 @@ Two smaller things deserve a mention because they're the kind of signal we'd act
 Second, ADK couldn't instantiate agents dynamically at the time, so to support customer-created custom agents we maintained a pre-allocated pool of ten agent slots with FIFO eviction. When you're building a slot pool to fake a feature, the framework is telling you something.
 
 *March 2026*
+{: .eyebrow}
 
 ## The Two-Week Bet
 
@@ -88,6 +92,7 @@ And Mastra was *good*. We were back in TypeScript, which meant the AI service co
 Which makes what happened next the strangest chapter to write: six weeks later, we left Mastra too. And for the first time, we weren't fleeing a framework that had failed us.
 
 *April 2026*
+{: .eyebrow}
 
 ## Beaten by Our Own MCP
 
@@ -106,6 +111,7 @@ In December 2024 that decision would have taken us a cycle of committee meetings
 > You know that thing you already use all day and love? That, inside Vasco.
 
 *The payoff*
+{: .eyebrow}
 
 ## What a Coding Runtime Gives an Agent That Never Writes Code
 
@@ -124,6 +130,7 @@ By then we had also noticed a pattern in ourselves: every time we implemented a 
 **The trade-offs are real, and we accepted them with open eyes.** We are, in practice, committed to Anthropic. Another model can technically still be swapped in — and we keep that option as a fallback if Claude models are ever down — but it's an emergency exit, not a long-term path; the point of the migration is the harness and the models together. The cost floor is higher than the Gemini Flash and Pro models we ran before, even after caching and model routing. Observability and evals are no longer first-party; we assemble our own. We wrote all of this down before migrating, and we'd rather own these trade-offs than keep paying the tax of being a worse Claude Code.
 
 *Epilogue*
+{: .eyebrow}
 
 ## What We'd Tell Our December 2024 Selves
 
