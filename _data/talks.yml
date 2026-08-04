@@ -1,7 +1,25 @@
-# Past talks, newest first — drives the /talks page cards.
+# Talks, newest first — drives the /talks page cards.
 # Each entry: title, date (ISO, formatted for the rail), event_url (the date
 # links to it), venues [{name, url}], links [{label, url}] (slides/video/source),
-# description (markdown, rendered inline), note (optional, e.g. language).
+# description (markdown, rendered inline), note (optional, e.g. language),
+# upcoming (optional bool — true entries render under "Upcoming talks", the
+# rest under "Past talks").
+- title: "If Claude Writes the Code, What Still Makes Me a Developer?"
+  date: 2026-11-27
+  upcoming: true
+  event_url: "https://www.dev-mtl.ca/"
+  venues:
+    - name: "/dev/mtl"
+      url: "https://www.dev-mtl.ca/"
+  description: >
+    I haven’t written a line of code in months, yet I still ship features, solve
+    architecture problems, and review PRs. Developing with AI isn’t only about
+    learning new practices — it’s also about **unlearning**, and that’s the hard
+    part for a senior developer. I trace the trajectory step by step: from Tab
+    autocomplete to agent mode, to plan-driven development, to workflows shared
+    across a team. And what stays genuinely hard: **debugging, code review,
+    long-term quality**.
+  note: "This presentation will be given in French."
 - title: "Creating a Custom Task Tool with React, Liveblocks, Clerk"
   date: 2024-11-01
   event_url: "https://guild.host/events/react-montral-meetup-kwiawm"
